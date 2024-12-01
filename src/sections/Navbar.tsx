@@ -22,15 +22,22 @@ export default function Navbar() {
             />
           </div>
           <div className="lg:flex items-center justify-center hidden">
-            <nav className="flex gap-10">
+            <nav className="flex px-5 py-3 gap-6 rounded-xl bg-others-stack/50 backdrop-blur">
               {navLinks.map((link) => (
-                <a key={link.label} href={link.href}>
+                <a key={link.label} href={link.href} className="px-2">
                   {link.label}
                 </a>
               ))}
             </nav>
           </div>
-          <div></div>
+          <div className="flex justify-end gap-3">
+            <button className="p-3 rounded-lg gap-2 bg-secondary-500">
+              ID
+            </button>
+            <button className="px-6 py-3 bg-primary-500 rounded-xl gap-1">
+              Hubungi Kami
+            </button>
+          </div>
         </div>
       </div>
     </header>
