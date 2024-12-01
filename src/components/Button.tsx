@@ -6,9 +6,12 @@ const classes = cva(
   {
     variants: {
       variant: {
-        primary: "bg-primary-500 text-text-whitePrimary",
-        secondary: "bg-secondary-50 text-text-blackPrimary",
-        tertiary: "bg-tertiary-700 text-text-whitePrimary",
+        primary:
+          "bg-primary-500 text-text-whitePrimary hover:bg-primary-500/90",
+        secondary:
+          "bg-secondary-50 text-text-blackPrimary hover:bg-secondary-50/90",
+        tertiary:
+          "bg-tertiary-700 text-text-whitePrimary hover:bg-tertiary-700/90",
       },
       size: {
         sm: "h-10",
