@@ -4,7 +4,7 @@ import Button from "@/components/Button";
 import ChangeLanguage from "@/components/ChangeLanguage";
 
 const navLinks = [
-  { label: "Home", href: "#" },
+  // { label: "Home", href: "#" },
   { label: "Kota", href: "#kota" },
   { label: "Mitra", href: "#mitra" },
   { label: "Pengendara", href: "#pengendara" },
@@ -38,8 +38,8 @@ const PhoneIcon = () => (
 
 export default function Navbar() {
   return (
-    <header className="py-7">
-      <div className="container">
+    <header className="py-7 sticky z-10">
+      <div>
         <div className="grid grid-cols-3 items-center">
           <div>
             <Image

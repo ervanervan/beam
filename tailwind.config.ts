@@ -28,6 +28,10 @@ export default {
         lg: "1200px",
       },
 
+      backgroundImage: {
+        "hero-pattern": "url('./../assets/images/hero-image.png')",
+      },
+
       fontSize: {
         title: ["4.5rem", "5rem"], // Title: 72px / 80px
         h1: ["3rem", "3.25rem"], // Heading 1: 48px / 52px
@@ -51,7 +55,7 @@ export default {
           blackSecondary: "#464646",
           blackTertiary: "#AFAFAF",
           whitePrimary: "#F9F9F9",
-          whiteSecondary: "##E5E5E5",
+          whiteSecondary: "#E5E5E5",
           purple1: "#7347FF",
           purple2: "#5D39D2",
         },
