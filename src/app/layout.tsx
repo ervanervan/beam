@@ -12,9 +12,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Beam - Modern Design Website Landing Page",
   description: "Beam - Modern Design Website Landing Page",
-  // icons: {
-  //   icon: "/favicon.svg",
-  // },
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
