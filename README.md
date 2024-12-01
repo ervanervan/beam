@@ -34,18 +34,7 @@ Ervan Kurniawan – Web Developer, responsible for implementing the design and b
 - HTML5, CSS3, and JavaScript (for static websites).
 - CSS Framework: TailwindCSS.
 - Development Tools: Visual Studio Code, Git.
-## Technologies Used
 
-**Design**
-- Tools: Figma,
-- UX Design: UX Audit (Used the Heuristic Evaluation),
-- Fonts: Poppins,
-- Icon: Heroicons.
-
-**Development**
-- HTML5, CSS3, and JavaScript (for static websites),
-- CSS Framework: TailwindCSS,
-- Development Tools: Visual Studio Code, Git.
 ##
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
