@@ -46,16 +46,16 @@ const ArrowRightIcon = () => (
 
 export default function Hero() {
   return (
-    <section className="md:px-7 md:pt-7">
-      <div className="relative z-20 container w-full h-screen bg-cover bg-center bg-hero-pattern md:rounded-[2rem]">
+    <section className="lg:px-7 lg:pt-7">
+      <div className="relative z-20 container w-full h-screen bg-cover bg-center bg-hero-pattern lg:rounded-[2rem]">
         <Navbar />
         <div className="flex flex-col items-start justify-center h-[80vh] mx-auto">
-          <h1 className="text-text-whitePrimary text-title font-semibold">
-            Gerak bebas <br /> dengan Beam
+          <h1 className="text-text-whitePrimary text-6xl md:text-title font-semibold">
+            Gerak bebas <br className="hidden md:block" /> dengan Beam
           </h1>
           <p className="mt-3 text-body1 text-text-whiteSecondary">
-            Ubah masa depan mulai dari dirimu dengan <br /> menggunakan beam
-            sekarang.
+            Ubah masa depan mulai dari dirimu dengan{" "}
+            <br className="hidden md:block" /> menggunakan beam sekarang.
           </p>
           <div className="flex flex-col md:flex-row gap-3 mt-11">
             <Button variant="secondary" icon={<MapPinIcon />}>
@@ -71,7 +71,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="container max-w-6xl pb-10 border-x border-others-santasGray border-dashed"></div>
+      <div className="container max-w-xs md:max-w-[44rem] lg:max-w-6xl pb-10 border-x border-others-santasGray border-dashed"></div>
     </section>
   );
 }

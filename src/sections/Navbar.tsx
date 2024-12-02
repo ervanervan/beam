@@ -40,7 +40,7 @@ export default function Navbar() {
   return (
     <header className="py-7 sticky z-30">
       <div>
-        <div className="grid grid-cols-3 items-center">
+        <div className="grid grid-cols-2 lg:grid-cols-3 items-center">
           <div>
             <Image
               src={logoPrimary}

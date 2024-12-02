@@ -2,7 +2,7 @@ import { cva } from "class-variance-authority";
 import React, { ButtonHTMLAttributes, ReactNode } from "react";
 
 const classes = cva(
-  "px-6 h-11 rounded-xl gap-1 flex items-center justify-center font-medium text-sm",
+  "px-6 h-11 rounded-xl gap-1 flex items-center justify-center font-medium text-sm whitespace-nowrap",
   {
     variants: {
       variant: {
