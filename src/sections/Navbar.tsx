@@ -38,7 +38,7 @@ const PhoneIcon = () => (
 
 export default function Navbar() {
   return (
-    <header className="py-7 sticky z-10">
+    <header className="py-7 sticky z-30">
       <div>
         <div className="grid grid-cols-3 items-center">
           <div>

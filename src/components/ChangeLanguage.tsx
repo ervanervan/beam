@@ -20,7 +20,7 @@ export default function ChangeLanguage() {
     <div className="relative inline-block text-left">
       <button
         type="button"
-        className="flex items-center gap-2 px-4 h-11 bg-others-stack/50 text-text-whitePrimary rounded-lg hover:bg-others-stack/45 focus:outline-none"
+        className="flex items-center gap-2 px-4 h-11 bg-others-stack text-text-whitePrimary rounded-lg hover:bg-others-stack/70 focus:outline-none"
         id="menu-button"
         onClick={() => setIsDropdownOpen((prev) => !prev)} // Toggle dropdown
       >
@@ -49,11 +49,11 @@ export default function ChangeLanguage() {
       </button>
 
       {isDropdownOpen && (
-        <div className="absolute mt-2 w-full overflow-hidden bg-others-stack/50 rounded-lg shadow-lg z-10">
+        <div className="absolute mt-2 w-full overflow-hidden bg-others-stack rounded-lg shadow-lg z-10">
           {countries.map((country) => (
             <button
               key={country.code}
-              className="flex items-center gap-2 px-4 py-2 w-full text-text-whitePrimary hover:bg-others-stack/45 focus:outline-none"
+              className="flex items-center gap-2 px-4 py-2 w-full text-text-whitePrimary hover:bg-white/20 focus:outline-none"
               onClick={() => handleCountryChange(country)}
             >
               <span className="text-sm">{country.code}</span>
