@@ -42,7 +42,7 @@ export default function Misi() {
               draggable="false"
             />
           </div>
-          <div className="absolute -z-10 top-0 left-0">
+          <div className="absolute -z-10 top-0 left-0 hidden md:block">
             <Image
               src={vectorMisi}
               alt="Vector misi"
@@ -54,14 +54,14 @@ export default function Misi() {
             <Tag>Misi</Tag>
           </div>
           <div className="max-w-4xl mx-auto relative">
-            <div className="absolute z-10 top-11 -left-6">
+            <div className="absolute z-10 top-11 -left-6 hidden md:block">
               <Image
                 src={misiImage1}
                 alt="Misi image 1"
                 className="w-20 h-12 rounded-md"
               />
             </div>
-            <div className="absolute z-10 top-4 -right-11">
+            <div className="absolute z-10 top-4 -right-11 hidden md:block">
               <Image
                 src={misiImage2}
                 alt="Misi image 2"

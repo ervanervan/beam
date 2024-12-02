@@ -46,8 +46,8 @@ const ArrowRightIcon = () => (
 
 export default function Hero() {
   return (
-    <section className="px-7 pt-7">
-      <div className="relative z-20 container w-full h-screen bg-cover bg-center bg-hero-pattern rounded-[2rem]">
+    <section className="md:px-7 md:pt-7">
+      <div className="relative z-20 container w-full h-screen bg-cover bg-center bg-hero-pattern md:rounded-[2rem]">
         <Navbar />
         <div className="flex flex-col items-start justify-center h-[80vh] mx-auto">
           <h1 className="text-text-whitePrimary text-title font-semibold">
@@ -57,7 +57,7 @@ export default function Hero() {
             Ubah masa depan mulai dari dirimu dengan <br /> menggunakan beam
             sekarang.
           </p>
-          <div className="flex gap-3 mt-11">
+          <div className="flex flex-col md:flex-row gap-3 mt-11">
             <Button variant="secondary" icon={<MapPinIcon />}>
               Lihat Garasi Beam
             </Button>
