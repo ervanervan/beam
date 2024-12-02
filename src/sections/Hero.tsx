@@ -46,7 +46,7 @@ const ArrowRightIcon = () => (
 
 export default function Hero() {
   return (
-    <section className="p-7">
+    <section className="px-7 pt-7">
       <div className="relative z-20 container w-full h-screen bg-cover bg-center bg-hero-pattern rounded-[2rem]">
         <Navbar />
         <div className="flex flex-col items-start justify-center h-[80vh] mx-auto">
@@ -71,6 +71,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
+      <div className="container max-w-6xl pb-10 border-x border-others-santasGray border-dashed"></div>
     </section>
   );
 }
