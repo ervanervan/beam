@@ -5,7 +5,7 @@ import Image, { StaticImageData } from "next/image";
 interface VehicleCardProps {
   imageSrc: string | StaticImageData;
   title: string;
-  onButtonClick?: () => void; // Optional click handler
+  // onButtonClick?: () => void; // Optional click handler
 }
 
 const ArrowRightIcon = () => (
@@ -29,8 +29,8 @@ const ArrowRightIcon = () => (
 export default function VehicleCard({
   imageSrc,
   title,
-  onButtonClick,
-}: VehicleCardProps) {
+}: // onButtonClick,
+VehicleCardProps) {
   return (
     <div className="bg-gradientPrimary hover:bg-gradientPrimaryHover transition-all duration-300 ease-in-out rounded-3xl">
       <div className="flex flex-col px-6 md:px-10 pb-6 md:pb-10 pt-6">
@@ -48,7 +48,7 @@ export default function VehicleCard({
           <Button
             variant="tertiary"
             icon={<ArrowRightIcon />}
-            onClick={onButtonClick}
+            // onClick={onButtonClick}
           />
         </div>
       </div>
