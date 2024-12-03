@@ -7,7 +7,7 @@ import misiImage2 from "@/assets/images/misi-image2.png";
 
 export default function Mission() {
   return (
-    <section className="">
+    <section>
       <DashedBorderContainer>
         {/* Vector Background */}
         <div className="absolute -z-10 top-0 left-0 hidden md:block">

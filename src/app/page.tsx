@@ -1,5 +1,6 @@
 import Hero from "@/sections/Hero";
 import Mission from "@/sections/Mission";
+import Priority from "@/sections/Priority";
 import Videos from "@/sections/Videos";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Mission />
       <Videos />
+      <Priority />
     </>
   );
 }

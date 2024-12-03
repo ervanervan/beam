@@ -30,6 +30,8 @@ export default {
 
       backgroundImage: {
         "hero-pattern": "url('./../assets/images/hero-image.png')",
+        gradientPrimary: "linear-gradient(to right, #E8E1FF, #FFEADB)",
+        gradientSecondary: "linear-gradient(to right, #CFC1FF, #FFE1CC)",
       },
 
       fontSize: {
@@ -62,8 +64,7 @@ export default {
         background: {
           DEFAULT: "#F9FAFB",
           white: "#F9F4F4",
-          gradientPrimary: "linear-gradient(to right, #E8E1FF, #FFEADB)",
-          gradientSecondary: "linear-gradient(to right, #CFC1FF, #FFE1CC)",
+          whitebg: "#F4F4F4",
         },
         primary: {
           50: "#F1EDFF",
@@ -97,7 +98,7 @@ export default {
           400: "#B1B1B1",
           500: "#9D9D9D",
           600: "#7F7F7F",
-          700: "#626262",
+          700: "#2E2E2E",
           800: "#444444",
           900: "#272727",
         },
