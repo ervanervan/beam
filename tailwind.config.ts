@@ -31,6 +31,7 @@ export default {
       backgroundImage: {
         "hero-pattern": "url('./../assets/images/hero-image.png')",
         gradientPrimary: "linear-gradient(to right, #E8E1FF, #FFEADB)",
+        gradientPrimaryHover: "linear-gradient(to right, #E5E5E5, #E5E5E5)",
         gradientSecondary: "linear-gradient(to right, #CFC1FF, #FFE1CC)",
       },
 

@@ -1,8 +1,27 @@
 import DashedBorderContainer from "@/components/DashedBorderContainer";
 import Tag from "@/components/Tag";
-import React from "react";
+import VehicleCard from "@/components/VehicleCard";
+import vehicleImage1 from "@/assets/images/vehicle-image1.png";
+import vehicleImage2 from "@/assets/images/vehicle-image2.png";
+
+const vehicles = [
+  {
+    id: 1,
+    imageSrc: vehicleImage1,
+    title: "The Beam Saturn S",
+  },
+  {
+    id: 2,
+    imageSrc: vehicleImage2,
+    title: "Beam Rover",
+  },
+];
 
 export default function Vehicle() {
+  // const handleButtonClick = (title: string) => {
+  //   console.log(`Button clicked for ${title}`);
+  // };
+
   return (
     <section>
       <DashedBorderContainer showTop={false}>
@@ -23,7 +42,16 @@ export default function Vehicle() {
             </div>
           </div>
 
-          <div className="mt-10"></div>
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-7">
+            {vehicles.map((vehicle) => (
+              <VehicleCard
+                key={vehicle.id}
+                imageSrc={vehicle.imageSrc}
+                title={vehicle.title}
+                // onButtonClick={() => handleButtonClick(vehicle.title)}
+              />
+            ))}
+          </div>
         </div>
       </DashedBorderContainer>
     </section>
