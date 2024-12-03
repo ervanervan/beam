@@ -5,7 +5,7 @@ import vectorMisi from "@/assets/images/vector-misi.svg";
 import misiImage1 from "@/assets/images/misi-image1.png";
 import misiImage2 from "@/assets/images/misi-image2.png";
 
-export default function Misi() {
+export default function Mission() {
   return (
     <section className="">
       <DashedBorderContainer>

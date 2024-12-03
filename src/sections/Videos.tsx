@@ -21,7 +21,7 @@ const PlayICon = () => (
   </svg>
 );
 
-export default function Video() {
+export default function Videos() {
   return (
     <section>
       <DashedBorderContainer showTop={false}>
