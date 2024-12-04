@@ -1,3 +1,4 @@
+"use client";
 import Button from "@/components/Button";
 import DashedBorderContainer from "@/components/DashedBorderContainer";
 import Tag from "@/components/Tag";
@@ -8,6 +9,7 @@ import partnershipImage1 from "@/assets/images/partnership-image1.png";
 import partnershipImage2 from "@/assets/images/partnership-image2.png";
 import partnershipImage3 from "@/assets/images/partnership-image3.png";
 import PartnershipCard from "@/components/PartnershipCard";
+import { useRef, useState } from "react";
 
 const ArrowLeftIcon = () => (
   <svg
@@ -94,6 +96,22 @@ const partnershipData = [
 ];
 
 export default function Partnership() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+  const scrollAmount = 300; // Jumlah scroll saat tombol ditekan
+
+  const handlePrev = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollLeft -= scrollAmount;
+    }
+  };
+
+  const handleNext = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollLeft += scrollAmount;
+    }
+  };
   return (
     <section>
       <DashedBorderContainer showTop={false} className="overflow-hidden">
@@ -114,14 +132,26 @@ export default function Partnership() {
           </div>
           <div className="mt-9">
             <div className="flex items-center justify-between">
-              <span>1/4</span>
+              {/* <span>1/4</span> */}
+              <div></div>
               <div className="flex items-center gap-4 mr-9">
-                <Button variant="secondary" icon={<ArrowLeftIcon />} />
-                <Button variant="secondary" icon={<ArrowRightIcon />} />
+                <Button
+                  variant="secondary"
+                  icon={<ArrowLeftIcon />}
+                  onClick={handlePrev}
+                />
+                <Button
+                  variant="secondary"
+                  icon={<ArrowRightIcon />}
+                  onClick={handleNext}
+                />
               </div>
             </div>
 
-            <div className="mt-6 flex items-start gap-7 overflow-x-scroll scrollbar-hide">
+            <div
+              ref={scrollContainerRef}
+              className="mt-6 flex items-start gap-7 overflow-x-scroll scrollbar-hide smooth-scroll"
+            >
               {partnershipData.map((data, index) => (
                 <PartnershipCard
                   key={index}

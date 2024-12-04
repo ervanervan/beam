@@ -11,3 +11,7 @@
   -ms-overflow-style: none; /* Untuk Internet Explorer 10+ */
   scrollbar-width: none; /* Untuk Firefox */
 }
+
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
