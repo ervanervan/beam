@@ -40,19 +40,18 @@ export default function Footer() {
   return (
     <footer className="relative pb-5">
       <DashedBorderContainer showBottom={false}>
-        <div className="max-w-5xl mx-auto grid grid-cols-2">
-          <div className="flex items-start gap-10">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <div className="flex items-start gap-6 md:gap-10">
             <div>
               <Image src={logoPrimary} alt="Beam logo" className="size-12" />
             </div>
             <div>
-              <h2 className="text-h2 text-primary-500 font-semibold">
+              <h2 className="text-h4 md:text-h2 text-primary-500 font-semibold">
                 Beam <br className="hidden md:block" /> Mobility
               </h2>
-              <div className="mt-8">
+              <div className="mt-4 md:mt-8">
                 <p className="text-body4 text-text-blackSecondary">
-                  Hak Cipta 2024 © <br className="hidden md:block" /> Beam
-                  Mobility Holdings Pte. Ltd.
+                  Hak Cipta 2024 © <br /> Beam Mobility Holdings Pte. Ltd.
                 </p>
               </div>
               <div className="mt-5 flex items-center gap-3">
@@ -81,8 +80,8 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex justify-end">
-            <div className="grid grid-cols-[repeat(4,_140px)] items-start gap-10">
+          <div className="flex lg:justify-end">
+            <div className="grid grid-cols-2 md:grid-cols-[repeat(4,_140px)] items-start gap-7 xl:gap-10">
               {footerLinks.map((section, index) => (
                 <div key={index}>
                   <h3 className="font-medium text-text-blackPrimary">

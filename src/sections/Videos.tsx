@@ -29,7 +29,7 @@ export default function Videos() {
           <Image
             src={thumbnailVideo}
             alt="Thumbnail video"
-            className="w-full md:h-[536px] object-cover rounded-[32px]"
+            className="w-full md:h-[536px] object-cover xl:rounded-[32px]"
           />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
             <Button

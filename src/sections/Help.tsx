@@ -49,7 +49,7 @@ export default function Help() {
           />
         </div>
       </div>
-      <div className="relative z-20 container lg:px-16 w-full bg-cover bg-center bg-help-pattern lg:rounded-[2rem]">
+      <div className="relative z-20 container lg:px-16 w-full bg-cover bg-center bg-help-pattern xl:rounded-[2rem]">
         <div className="flex flex-col justify-center w-full md:max-w-[720px] h-[496px]">
           <h1 className="text-h2 md:text-h1 font-semibold text-text-whitePrimary">
             Masih ada pertanyaan?

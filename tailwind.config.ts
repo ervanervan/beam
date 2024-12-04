@@ -22,11 +22,11 @@ export default {
         sans: ["var(--font-poppins)", "sans-serif"],
       },
 
-      screens: {
-        sm: "375px",
-        md: "768px",
-        lg: "1200px",
-      },
+      // screens: {
+      //   sm: "375px",
+      //   md: "768px",
+      //   lg: "1200px",
+      // },
 
       backgroundImage: {
         "hero-pattern": "url('./../assets/images/hero-image.png')",

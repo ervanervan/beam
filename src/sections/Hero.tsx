@@ -46,8 +46,8 @@ const ArrowRightIcon = () => (
 
 export default function Hero() {
   return (
-    <section className="lg:px-7 lg:pt-7">
-      <div className="relative z-20 container lg:px-16 w-full h-screen bg-cover bg-center bg-hero-pattern lg:rounded-[2rem]">
+    <section className="xl:px-7 xl:pt-7">
+      <div className="relative z-20 container lg:px-16 w-full h-screen bg-cover bg-center bg-hero-pattern xl:rounded-[2rem]">
         <Navbar />
         <div className="flex flex-col items-start justify-center h-[80vh] mx-auto">
           <h1 className="text-text-whitePrimary text-6xl md:text-title font-semibold">
