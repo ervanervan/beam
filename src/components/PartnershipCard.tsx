@@ -20,8 +20,8 @@ export default function PartnershipCard({
   buttonIcon,
 }: PartnershipCardProps) {
   return (
-    <div className="relative w-full max-w-[564px] bg-gradientTertiary hover:bg-gradientTertiaryHover transition-all duration-300 ease-in-out rounded-[1.75rem] flex flex-shrink-0">
-      <div className="flex flex-col w-full gap-6 p-10">
+    <div className="relative overflow-hidden w-full md:max-w-[564px] bg-gradientTertiary hover:bg-gradientTertiaryHover transition-all duration-300 ease-in-out rounded-[1.75rem] flex flex-shrink-0">
+      <div className="flex flex-col w-full gap-6 p-5 md:p-10">
         {/* Header Section */}
         <div className="flex items-start gap-3">
           <Image
@@ -32,7 +32,7 @@ export default function PartnershipCard({
             height={24}
           />
           <div>
-            <h4 className="text-h4 text-text-blackPrimary font-medium">
+            <h4 className="text-h5 md:text-h4 text-text-blackPrimary font-medium">
               <span className="text-text-purple1">{title.split(",")[0]}</span>
               {title.split(",")[1] && ` ${title.split(",")[1].trim()}`}
             </h4>
@@ -48,9 +48,7 @@ export default function PartnershipCard({
           <Image
             src={imageSrc}
             alt={imageAlt}
-            className="w-full max-w-[350px] h-auto rounded-t-xl -mb-10"
-            width={350}
-            height={200}
+            className="w-[150px] md:max-w-[350px] h-auto rounded-t-xl -mb-5 md:-mb-10"
           />
           {/* Button */}
           <div>
