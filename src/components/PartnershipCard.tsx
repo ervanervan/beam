@@ -48,7 +48,7 @@ export default function PartnershipCard({
           <Image
             src={imageSrc}
             alt={imageAlt}
-            className="w-[150px] md:max-w-[350px] h-auto rounded-t-xl -mb-5 md:-mb-10"
+            className="w-[150px] md:w-[350px] h-auto rounded-t-xl -mb-5 md:-mb-10"
           />
           {/* Button */}
           <div>

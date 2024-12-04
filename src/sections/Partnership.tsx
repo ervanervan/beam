@@ -131,10 +131,10 @@ export default function Partnership() {
             </div>
           </div>
           <div className="mt-9">
-            <div className="flex items-center justify-between">
+            <div className="md:flex items-center justify-between hidden">
               {/* <span>1/4</span> */}
               <div></div>
-              <div className="flex items-center gap-4 mr-9">
+              <div className="flex items-center gap-4 md:mr-9">
                 <Button
                   variant="secondary"
                   icon={<ArrowLeftIcon />}
