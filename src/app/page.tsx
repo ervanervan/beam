@@ -1,4 +1,5 @@
 import Feature from "@/sections/Feature";
+import Footer from "@/sections/Footer";
 import Help from "@/sections/Help";
 import Hero from "@/sections/Hero";
 import Mission from "@/sections/Mission";
@@ -20,6 +21,7 @@ export default function Home() {
       <News />
       <Partnership />
       <Help />
+      <Footer />
     </>
   );
 }
