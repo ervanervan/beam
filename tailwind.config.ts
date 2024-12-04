@@ -33,6 +33,9 @@ export default {
         gradientPrimary: "linear-gradient(to right, #E8E1FF, #FFEADB)",
         gradientPrimaryHover: "linear-gradient(to right, #E5E5E5, #E5E5E5)",
         gradientSecondary: "linear-gradient(to right, #CFC1FF, #FFE1CC)",
+        gradientSecondaryHover: "linear-gradient(to right, #E5E5E5, #E5E5E5)",
+        gradientTertiary: "linear-gradient(to right, #FFEADB, #E8E1FF)",
+        gradientTertiaryHover: "linear-gradient(to right, #E5E5E5, #E5E5E5)",
       },
 
       fontSize: {

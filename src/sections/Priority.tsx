@@ -63,7 +63,7 @@ export default function Priority() {
                   </div>
                 </div>
               </div>
-              <div className="bg-secondary-200 px-7 md:px-10 rounded-b-3xl overflow-scroll md:overflow-visible">
+              <div className="bg-secondary-200 px-7 md:px-10 rounded-b-3xl overflow-x-scroll md:overflow-visible">
                 <div className="flex items-center justify-between py-2.5 text-secondary-700">
                   <a
                     href=""
