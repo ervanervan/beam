@@ -38,7 +38,7 @@ const PhoneIcon = () => (
 
 export default function Navbar() {
   return (
-    <header className="absolute top-14 left-0 w-full z-30 bg-transparent">
+    <header className="absolute top-8 md:top-14 left-0 w-full z-30 bg-transparent">
       <div className="container mx-auto lg:px-16">
         <div className="grid grid-cols-2 lg:grid-cols-3 items-center">
           <div>

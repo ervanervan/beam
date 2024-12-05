@@ -1,5 +1,7 @@
+"use client";
 import { cva } from "class-variance-authority";
 import React, { ButtonHTMLAttributes, ReactNode } from "react";
+import { useRouter } from "next/navigation";
 
 const classes = cva(
   "px-6 h-11 rounded-xl gap-1 flex items-center justify-center font-medium text-sm whitespace-nowrap",
@@ -26,6 +28,7 @@ export default function Button(
     size?: "sm";
     icon?: ReactNode;
     iconPosition?: "left" | "right";
+    navigateTo?: string;
   } & ButtonHTMLAttributes<HTMLButtonElement>
 ) {
   const {
@@ -35,10 +38,28 @@ export default function Button(
     icon,
     children,
     iconPosition = "left",
+    navigateTo,
+    onClick,
     ...otherProps
   } = props;
+
+  const router = useRouter();
+
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    if (navigateTo) {
+      router.push(navigateTo);
+    }
+    if (onClick) {
+      onClick(event);
+    }
+  };
+
   return (
-    <button className={classes({ variant, size, className })} {...otherProps}>
+    <button
+      className={classes({ variant, size, className })}
+      onClick={handleClick}
+      {...otherProps}
+    >
       {icon && iconPosition === "left" && <span>{icon}</span>}
       {children}
       {icon && iconPosition === "right" && <span>{icon}</span>}
