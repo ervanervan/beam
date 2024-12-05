@@ -24,9 +24,13 @@ export default function VehicleSafetyCard({
   const isTextLeft = textPosition === "left";
   const isImageLeft = imagePosition === "left";
   return (
-    <div className="grid grid-cols-2 items-center gap-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
       {/* Konten Teks */}
-      <div className={`flex flex-col ${isTextLeft ? "order-1" : "order-2"}`}>
+      <div
+        className={`flex flex-col ${
+          isTextLeft ? "order-1 md:order-1" : "order-1 md:order-2"
+        }`}
+      >
         <div>
           <Tag>{tag}</Tag>
         </div>
@@ -43,10 +47,10 @@ export default function VehicleSafetyCard({
       {/* Konten Gambar */}
       <div
         className={`flex justify-end ${
-          isImageLeft ? "mr-auto order-1" : "order-2"
+          isImageLeft ? "mr-auto order-2 md:order-1" : "order-2 md:order-2"
         }`}
       >
-        <div className="bg-gradientPrimary rounded-3xl w-full md:w-[33rem] p-16">
+        <div className="flex items-center justify-center bg-gradientPrimary rounded-3xl w-full md:w-[33rem] md:h-[25rem] p-6 md:p-16">
           <Image
             src={imageSrc}
             alt={imageAlt}
