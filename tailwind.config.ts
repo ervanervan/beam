@@ -32,6 +32,8 @@ export default {
         "hero-pattern": "url('./../assets/images/hero-image.png')",
         "help-pattern": "url('./../assets/images/help-image.png')",
         "hero-city-pattern": "url('./../assets/images/hero-city-image.png')",
+        "hero-partner-pattern":
+          "url('./../assets/images/hero-partner-image.png')",
         gradientPrimary: "linear-gradient(to right, #E8E1FF, #FFEADB)",
         gradientPrimaryHover: "linear-gradient(to right, #E5E5E5, #E5E5E5)",
         gradientSecondary: "linear-gradient(to right, #CFC1FF, #FFE1CC)",

@@ -1,5 +1,34 @@
+import { AccessibilityIcon } from "@/assets/icons/AccessibilityIcon";
+import { ArrowRightLongIcon } from "@/assets/icons/ArrowRightLongIcon";
+import Button from "@/components/Button";
+import Hero from "@/sections/Hero";
 import React from "react";
 
 export default function Partner() {
-  return <div>Partner</div>;
+  return (
+    <>
+      <Hero
+        title="Mitra"
+        description="Jika Anda peduli pada masa depan yang lebih baik 
+        melalui transportasi berkelanjutan, mari berbincang. 
+        Kami ingin mendengar ide dan masukan Anda!."
+        backgroundClass="bg-hero-partner-pattern"
+      >
+        <div className="flex flex-col md:flex-row gap-3 mt-11">
+          <Button
+            variant="primary"
+            icon={<ArrowRightLongIcon />}
+            iconPosition="right"
+          >
+            Unduh Aplikasi
+          </Button>
+        </div>
+        <Button
+          variant="secondary"
+          icon={<AccessibilityIcon />}
+          className="px-[10px]"
+        ></Button>
+      </Hero>
+    </>
+  );
 }
