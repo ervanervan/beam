@@ -1,6 +1,7 @@
 import { AccessibilityIcon } from "@/assets/icons/AccessibilityIcon";
 import { ArrowRightLongIcon } from "@/assets/icons/ArrowRightLongIcon";
 import Button from "@/components/Button";
+import Benefits from "@/sections/Benefits";
 import Hero from "@/sections/Hero";
 import React from "react";
 
@@ -29,6 +30,7 @@ export default function Partner() {
           className="px-[10px]"
         ></Button>
       </Hero>
+      <Benefits />
     </>
   );
 }
