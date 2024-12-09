@@ -10,7 +10,7 @@ import vehicleSafetyImage5 from "@/assets/images/vehicle-safety-card-image5.png"
 export default function VehicleSafety() {
   return (
     <section>
-      <DashedBorderContainer showBottom={false}>
+      <DashedBorderContainer showBottom={false} showTop={false}>
         <div className="flex flex-col items-center gap-24">
           <VehicleSafetyCard
             tag="Keamanan kendaraan"
