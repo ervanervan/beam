@@ -4,7 +4,7 @@ interface CityGridProps {
 
 const CityGrid = ({ cities }: CityGridProps) => {
   return (
-    <div className="grid grid-cols-4 items-center mt-3 gap-y-2">
+    <div className="grid grid-cols-2 lg:grid-cols-4 items-center mt-3 gap-y-2">
       {cities.map((city, index) => (
         <p
           key={index}
