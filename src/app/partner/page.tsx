@@ -2,6 +2,7 @@ import { AccessibilityIcon } from "@/assets/icons/AccessibilityIcon";
 import { ArrowRightLongIcon } from "@/assets/icons/ArrowRightLongIcon";
 import Button from "@/components/Button";
 import Benefits from "@/sections/Benefits";
+import Help from "@/sections/Help";
 import Hero from "@/sections/Hero";
 import React from "react";
 
@@ -31,6 +32,19 @@ export default function Partner() {
         ></Button>
       </Hero>
       <Benefits />
+      <Help
+        title="Ayo berkolaborasi!"
+        description="Bermitra dengan kami bisa berarti berbagai hal—mulai dari kerjasama sederhana hingga kolaborasi strategis jangka panjang. Kami terbuka untuk diskusi dan mencari solusi terbaik bersama Anda."
+        backgroundClass="bg-partner-pattern"
+      >
+        <Button
+          variant="primary"
+          icon={<ArrowRightLongIcon />}
+          iconPosition="right"
+        >
+          Kolaborasi Sekarang
+        </Button>
+      </Help>
     </>
   );
 }

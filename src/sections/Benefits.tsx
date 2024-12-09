@@ -8,7 +8,7 @@ import vectorBenefit from "@/assets/images/vector-benefit.svg";
 export default function Benefits() {
   return (
     <section>
-      <DashedBorderContainer showBottom={false}>
+      <DashedBorderContainer>
         <div className="text-center max-w-[37rem] mx-auto">
           <div>
             <Tag>Benefit</Tag>

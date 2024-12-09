@@ -1,6 +1,7 @@
 import { AccessibilityIcon } from "@/assets/icons/AccessibilityIcon";
 import { ArrowRightLongIcon } from "@/assets/icons/ArrowRightLongIcon";
 import { MapPinIcon } from "@/assets/icons/MapPinIcon";
+import { PhoneWhiteIcon } from "@/assets/icons/PhoneWhiteIcon";
 import Button from "@/components/Button";
 import Feature from "@/sections/Feature";
 import Help from "@/sections/Help";
@@ -47,7 +48,21 @@ export default function Home() {
       <Feature />
       <News />
       <Partnership />
-      <Help />
+      <Help
+        title="Masih ada pertanyaan?"
+        description="Jika ingin tahu lebih lanjut tentang Beam atau tertarik bermitra bersama kami, 
+        kami dengan senang hati membantu Anda. Hubungi kami sekarang 
+        dan mari ciptakan sesuatu yang hebat bersama."
+        backgroundClass="bg-help-pattern"
+      >
+        <Button
+          variant="primary"
+          icon={<PhoneWhiteIcon />}
+          iconPosition="right"
+        >
+          Hubungi kami
+        </Button>
+      </Help>
     </>
   );
 }
