@@ -2,6 +2,7 @@
 import { AccessibilityIcon } from "@/assets/icons/AccessibilityIcon";
 import { ArrowRightLongIcon } from "@/assets/icons/ArrowRightLongIcon";
 import Button from "@/components/Button";
+import GarageLocation from "@/sections/GarageLocation";
 import Hero from "@/sections/Hero";
 import VehicleSafety from "@/sections/VehicleSafety";
 import React from "react";
@@ -31,6 +32,7 @@ export default function City() {
           className="px-[10px]"
         ></Button>
       </Hero>
+      <GarageLocation />
       <VehicleSafety />
     </>
   );
