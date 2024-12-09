@@ -24,11 +24,11 @@ export default function VehicleSafetyCard({
   const isTextLeft = textPosition === "left";
   const isImageLeft = imagePosition === "left";
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+    <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8">
       {/* Konten Teks */}
       <div
         className={`flex flex-col ${
-          isTextLeft ? "order-1 md:order-1" : "order-1 md:order-2"
+          isTextLeft ? "order-1 lg:order-1" : "order-1 lg:order-2"
         }`}
       >
         <div>
