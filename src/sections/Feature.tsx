@@ -9,6 +9,7 @@ import imageFeature3 from "@/assets/images/feature-image1.png";
 import { useState } from "react";
 import ArrowRightBlackIcon from "@/assets/icons/ArrowRightBlackIcon";
 import ArrowLeftBlackIcon from "@/assets/icons/ArrowLeftBlackIcon";
+import { ArrowRightLongIcon } from "@/assets/icons/ArrowRightLongIcon";
 
 type FeatureProps = {
   tag: String;
@@ -53,7 +54,7 @@ export default function Feature({ tag, title, description }: FeatureProps) {
             <div className="mt-6">
               <Button
                 variant="tertiary"
-                icon={<ArrowRightBlackIcon />}
+                icon={<ArrowRightLongIcon />}
                 iconPosition="right"
               >
                 Pelajari selengkapnya

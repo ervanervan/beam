@@ -33,6 +33,11 @@ export default function Partner() {
         ></Button>
       </Hero>
       <Benefits />
+      <Feature
+        tag="Program kerjasama"
+        title="#BeamBooster"
+        description="Membantu bisnis-bisnis setempat terhubung dengan pelanggan Beam untuk meningkatkan jumlah kunjungan, eksposur, dan pendapatan."
+      />
       <Help
         title="Ayo berkolaborasi!"
         description="Bermitra dengan kami bisa berarti berbagai hal—mulai dari kerjasama sederhana hingga kolaborasi strategis jangka panjang. Kami terbuka untuk diskusi dan mencari solusi terbaik bersama Anda."
@@ -46,11 +51,6 @@ export default function Partner() {
           Kolaborasi Sekarang
         </Button>
       </Help>
-      <Feature
-        tag="Program kerjasama"
-        title="#BeamBooster"
-        description="Membantu bisnis-bisnis setempat terhubung dengan pelanggan Beam untuk meningkatkan jumlah kunjungan, eksposur, dan pendapatan."
-      />
     </>
   );
 }
