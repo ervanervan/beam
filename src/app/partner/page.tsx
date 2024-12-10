@@ -5,6 +5,7 @@ import Benefits from "@/sections/Benefits";
 import Feature from "@/sections/Feature";
 import Help from "@/sections/Help";
 import Hero from "@/sections/Hero";
+import Testimonial from "@/sections/Testimonial";
 import React from "react";
 
 export default function Partner() {
@@ -38,6 +39,7 @@ export default function Partner() {
         title="#BeamBooster"
         description="Membantu bisnis-bisnis setempat terhubung dengan pelanggan Beam untuk meningkatkan jumlah kunjungan, eksposur, dan pendapatan."
       />
+      <Testimonial />
       <Help
         title="Ayo berkolaborasi!"
         description="Bermitra dengan kami bisa berarti berbagai hal—mulai dari kerjasama sederhana hingga kolaborasi strategis jangka panjang. Kami terbuka untuk diskusi dan mencari solusi terbaik bersama Anda."
