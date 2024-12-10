@@ -7,42 +7,8 @@ import imageFeature1 from "@/assets/images/feature-image1.png";
 import imageFeature2 from "@/assets/images/feature-image1.png";
 import imageFeature3 from "@/assets/images/feature-image1.png";
 import { useState } from "react";
-
-const ArrowLeftIcon = () => (
-  <svg
-    width="16"
-    height="16"
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M7 13L2 8M2 8L7 3M2 8H14"
-      stroke="#1F1F1F"
-      strokeWidth="1.4"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
-
-const ArrowRightIcon = () => (
-  <svg
-    width="16"
-    height="16"
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M9 3L14 8M14 8L9 13M14 8H2"
-      stroke="#1F1F1F"
-      strokeWidth="1.4"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
+import ArrowRightBlackIcon from "@/assets/icons/ArrowRightBlackIcon";
+import ArrowLeftBlackIcon from "@/assets/icons/ArrowLeftBlackIcon";
 
 const images = [
   { src: imageFeature1, alt: "Feature image 1" },
@@ -83,7 +49,7 @@ export default function Feature() {
             <div className="mt-6">
               <Button
                 variant="tertiary"
-                icon={<ArrowRightIcon />}
+                icon={<ArrowRightBlackIcon />}
                 iconPosition="right"
               >
                 Pelajari selengkapnya
@@ -106,13 +72,13 @@ export default function Feature() {
                 <div className="flex items-center gap-3">
                   <Button
                     variant="secondary"
-                    icon={<ArrowLeftIcon />}
+                    icon={<ArrowLeftBlackIcon />}
                     className="border border-tertiary-200"
                     onClick={prevImage}
                   />
                   <Button
                     variant="secondary"
-                    icon={<ArrowRightIcon />}
+                    icon={<ArrowRightBlackIcon />}
                     className="border border-tertiary-200"
                     onClick={nextImage}
                   />
