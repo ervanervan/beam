@@ -10,13 +10,19 @@ import { useState } from "react";
 import ArrowRightBlackIcon from "@/assets/icons/ArrowRightBlackIcon";
 import ArrowLeftBlackIcon from "@/assets/icons/ArrowLeftBlackIcon";
 
+type FeatureProps = {
+  tag: String;
+  title: String;
+  description: String;
+};
+
 const images = [
   { src: imageFeature1, alt: "Feature image 1" },
   { src: imageFeature2, alt: "Feature image 2" },
   { src: imageFeature3, alt: "Feature image 3" },
 ];
 
-export default function Feature() {
+export default function Feature({ tag, title, description }: FeatureProps) {
   // State untuk menyimpan indeks gambar yang sedang ditampilkan
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
@@ -37,14 +43,12 @@ export default function Feature() {
       <DashedBorderContainer showTop={false}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-10 items-center">
           <div className="flex flex-col">
-            <Tag>Fitur kami</Tag>
+            <Tag>{tag}</Tag>
             <h3 className="mt-8 text-text-blackPrimary text-h3 font-medium">
-              Perjalanan grup
+              {title}
             </h3>
             <p className="mt-3 text-text-blackSecondary text-body1">
-              Nikmati perjalanan seru bersama teman dan keluarga dengan fitur
-              Perjalanan Grup, di mana Anda dapat berkendara bersama menggunakan
-              satu akun. Fitur ini tersedia di beberapa kota tertentu.
+              {description}
             </p>
             <div className="mt-6">
               <Button

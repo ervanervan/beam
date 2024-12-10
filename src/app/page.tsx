@@ -45,7 +45,14 @@ export default function Home() {
       <Videos />
       <Priority />
       <Vehicle />
-      <Feature />
+      <Feature
+        tag="Fitur kami"
+        title="Perjalanan grup"
+        description="Nikmati perjalanan seru bersama teman dan keluarga 
+        dengan fitur Perjalanan Grup, di mana Anda dapat berkendara 
+        bersama menggunakan satu akun. Fitur ini tersedia 
+        di beberapa kota tertentu."
+      />
       <News />
       <Partnership />
       <Help

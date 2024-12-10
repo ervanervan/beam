@@ -2,6 +2,7 @@ import { AccessibilityIcon } from "@/assets/icons/AccessibilityIcon";
 import { ArrowRightLongIcon } from "@/assets/icons/ArrowRightLongIcon";
 import Button from "@/components/Button";
 import Benefits from "@/sections/Benefits";
+import Feature from "@/sections/Feature";
 import Help from "@/sections/Help";
 import Hero from "@/sections/Hero";
 import React from "react";
@@ -45,6 +46,11 @@ export default function Partner() {
           Kolaborasi Sekarang
         </Button>
       </Help>
+      <Feature
+        tag="Program kerjasama"
+        title="#BeamBooster"
+        description="Membantu bisnis-bisnis setempat terhubung dengan pelanggan Beam untuk meningkatkan jumlah kunjungan, eksposur, dan pendapatan."
+      />
     </>
   );
 }
