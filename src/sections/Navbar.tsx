@@ -3,6 +3,7 @@ import logoPrimary from "@/assets/images/logo-primary.svg";
 import Button from "@/components/Button";
 import ChangeLanguage from "@/components/ChangeLanguage";
 import { PhoneWhiteIcon } from "@/assets/icons/PhoneWhiteIcon";
+import Link from "next/link";
 
 const navLinks = [
   // { label: "Home", href: "#" },
@@ -17,13 +18,13 @@ export default function Navbar() {
     <header className="absolute top-8 md:top-14 left-0 w-full z-30 bg-transparent">
       <div className="container mx-auto lg:px-16">
         <div className="grid grid-cols-2 lg:grid-cols-3 items-center">
-          <div>
+          <Link href={"/"}>
             <Image
               src={logoPrimary}
               alt="Logo image"
               className="w-[54px] h:auto"
             />
-          </div>
+          </Link>
           <div className="lg:flex items-center justify-center hidden">
             <nav className="flex px-5 py-3 gap-6 rounded-xl bg-others-stack/50 backdrop-blur">
               {navLinks.map((link) => (

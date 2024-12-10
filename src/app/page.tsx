@@ -12,6 +12,7 @@ import Partnership from "@/sections/Partnership";
 import Priority from "@/sections/Priority";
 import Vehicle from "@/sections/Vehicle";
 import Videos from "@/sections/Videos";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -26,13 +27,15 @@ export default function Home() {
             <Button variant="secondary" icon={<MapPinIcon />}>
               Lihat Garasi Beam
             </Button>
-            <Button
-              variant="primary"
-              icon={<ArrowRightLongIcon />}
-              iconPosition="right"
-            >
-              Unduh Aplikasi
-            </Button>
+            <Link href={"/download"}>
+              <Button
+                variant="primary"
+                icon={<ArrowRightLongIcon />}
+                iconPosition="right"
+              >
+                Unduh Aplikasi
+              </Button>
+            </Link>
           </div>
           <Button
             variant="secondary"

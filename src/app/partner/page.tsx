@@ -6,6 +6,7 @@ import Feature from "@/sections/Feature";
 import Help from "@/sections/Help";
 import Hero from "@/sections/Hero";
 import Testimonial from "@/sections/Testimonial";
+import Link from "next/link";
 import React from "react";
 
 export default function Partner() {
@@ -19,13 +20,15 @@ export default function Partner() {
         backgroundClass="bg-hero-partner-pattern"
       >
         <div className="flex flex-col md:flex-row gap-3 mt-11">
-          <Button
-            variant="primary"
-            icon={<ArrowRightLongIcon />}
-            iconPosition="right"
-          >
-            Unduh Aplikasi
-          </Button>
+          <Link href={"/download"}>
+            <Button
+              variant="primary"
+              icon={<ArrowRightLongIcon />}
+              iconPosition="right"
+            >
+              Unduh Aplikasi
+            </Button>
+          </Link>
         </div>
         <Button
           variant="secondary"

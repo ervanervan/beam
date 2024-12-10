@@ -6,6 +6,7 @@ import GarageLocation from "@/sections/GarageLocation";
 import Help from "@/sections/Help";
 import Hero from "@/sections/Hero";
 import VehicleSafety from "@/sections/VehicleSafety";
+import Link from "next/link";
 import React from "react";
 
 export default function City() {
@@ -19,13 +20,15 @@ export default function City() {
         backgroundClass="bg-hero-city-pattern"
       >
         <div className="flex flex-col md:flex-row gap-3 mt-11">
-          <Button
-            variant="primary"
-            icon={<ArrowRightLongIcon />}
-            iconPosition="right"
-          >
-            Unduh Aplikasi
-          </Button>
+          <Link href={"/download"}>
+            <Button
+              variant="primary"
+              icon={<ArrowRightLongIcon />}
+              iconPosition="right"
+            >
+              Unduh Aplikasi
+            </Button>
+          </Link>
         </div>
         <Button
           variant="secondary"
