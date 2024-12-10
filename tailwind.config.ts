@@ -33,6 +33,8 @@ export default {
         "help-pattern": "url('./../assets/images/help-image.png')",
         "city-pattern": "url('./../assets/images/city-image.png')",
         "partner-pattern": "url('./../assets/images/partner-image.png')",
+        "hero-download-pattern":
+          "url('./../assets/images/hero-download-image.png')",
         "hero-city-pattern": "url('./../assets/images/hero-city-image.png')",
         "hero-partner-pattern":
           "url('./../assets/images/hero-partner-image.png')",
