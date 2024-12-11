@@ -12,9 +12,9 @@ import ArrowLeftBlackIcon from "@/assets/icons/ArrowLeftBlackIcon";
 import { ArrowRightLongIcon } from "@/assets/icons/ArrowRightLongIcon";
 
 type FeatureProps = {
-  tag: String;
-  title: String;
-  description: String;
+  tag: string;
+  title: string;
+  description: string;
 };
 
 const images = [
