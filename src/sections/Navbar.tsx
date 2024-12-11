@@ -70,7 +70,14 @@ export default function Navbar() {
             isOpen ? "transform translate-x-0" : "transform -translate-x-full"
           }`}
         >
-          <div className="absolute top-5 right-4 md:top-9 md:right-8">
+          <div className="flex items-center justify-between p-4 md:p-8">
+            <Link href={"/"}>
+              <Image
+                src={logoPrimary}
+                alt="Logo image"
+                className="w-[54px] h:auto"
+              />
+            </Link>
             <button
               className="flex items-center justify-center p-2.5 bg-text-whitePrimary rounded-lg border border-text-blackSecondary"
               onClick={() => setIsOpen((prev) => !prev)}
@@ -78,7 +85,7 @@ export default function Navbar() {
               <CloseIcon />
             </button>
           </div>
-          <nav className="flex flex-col items-start gap-4 py-6 px-6 mt-20">
+          <nav className="flex flex-col items-start gap-4 p-4 md:p-8 mt-10">
             {navLinks.map((link) => (
               <a
                 key={link.label}
@@ -89,7 +96,8 @@ export default function Navbar() {
               </a>
             ))}
           </nav>
-          <div className="flex flex-col md:flex-row gap-3 py-4 px-6 border-t border-gray-200">
+          <div className="border-t border-text-blackTertiary mx-4 md:mx-8 my-5"></div>
+          <div className="flex flex-col md:flex-row gap-3 p-4 md:p-8 border-gray-200">
             <ChangeLanguage />
             <Button
               variant="primary"
