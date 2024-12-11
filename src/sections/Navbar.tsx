@@ -21,7 +21,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="absolute pt-4 md:pt-8 lg:top-14 left-0 w-full z-30 bg-transparent">
+    <header className="absolute pt-4 md:pt-8 lg:pt-0 lg:top-14 left-0 w-full z-30 bg-transparent">
       <div className="container mx-auto lg:px-16">
         <div className="grid grid-cols-2 lg:grid-cols-3 items-center">
           <Link href={"/"}>
