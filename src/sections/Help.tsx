@@ -2,9 +2,9 @@ import bulletIcon from "@/assets/images/bullet-icon.svg";
 import Image from "next/image";
 
 type HelpProps = {
-  title: String;
-  description: String;
-  backgroundClass: String;
+  title: string;
+  description: string;
+  backgroundClass: string;
   children: React.ReactNode;
 };
 
