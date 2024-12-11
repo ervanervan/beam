@@ -20,16 +20,18 @@ export default function ChangeLanguage() {
     <div className="relative inline-block text-left">
       <button
         type="button"
-        className="flex items-center gap-2 px-4 h-11 bg-others-stack text-text-whitePrimary rounded-lg hover:bg-others-stack/70 focus:outline-none"
+        className="flex items-center px-4 h-11 w-full gap-2 justify-between bg-text-blackSecondary lg:bg-others-stack text-text-whitePrimary rounded-lg hover:bg-text-blackSecondary/90 lg:hover:bg-others-stack/70 focus:outline-none"
         id="menu-button"
         onClick={() => setIsDropdownOpen((prev) => !prev)} // Toggle dropdown
       >
-        <span className="text-sm">{selectedCountry.code}</span>
-        <img
-          src={selectedCountry.flag}
-          alt={`${selectedCountry.code} flag`}
-          className="w-4 h-[15px]"
-        />
+        <span className="flex items-center gap-2">
+          <span className="text-sm">{selectedCountry.code}</span>
+          <img
+            src={selectedCountry.flag}
+            alt={`${selectedCountry.code} flag`}
+            className="w-4 h-[15px]"
+          />
+        </span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -49,11 +51,11 @@ export default function ChangeLanguage() {
       </button>
 
       {isDropdownOpen && (
-        <div className="absolute mt-2 w-full overflow-hidden bg-others-stack rounded-lg shadow-lg z-10">
+        <div className="absolute mt-2 w-full overflow-hidden bg-text-blackSecondary lg:bg-others-stack rounded-lg shadow-lg z-10">
           {countries.map((country) => (
             <button
               key={country.code}
-              className="flex items-center gap-2 px-4 py-2 w-full text-text-whitePrimary hover:bg-white/20 focus:outline-none"
+              className="flex items-center gap-2 px-4 py-2 w-full text-text-whitePrimary hover:bg-white/15 focus:outline-none"
               onClick={() => handleCountryChange(country)}
             >
               <span className="text-sm">{country.code}</span>
