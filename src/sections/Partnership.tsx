@@ -9,7 +9,7 @@ import partnershipImage1 from "@/assets/images/partnership-image1.png";
 import partnershipImage2 from "@/assets/images/partnership-image2.png";
 import partnershipImage3 from "@/assets/images/partnership-image3.png";
 import PartnershipCard from "@/components/PartnershipCard";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 
 const ArrowLeftIcon = () => (
   <svg
@@ -96,7 +96,6 @@ const partnershipData = [
 ];
 
 export default function Partnership() {
-  const [scrollPosition, setScrollPosition] = useState(0);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   const scrollAmount = 300; // Jumlah scroll saat tombol ditekan
