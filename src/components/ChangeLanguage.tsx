@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from "react";
 
 const countries = [
@@ -26,7 +27,7 @@ export default function ChangeLanguage() {
       >
         <span className="flex items-center gap-2">
           <span className="text-sm">{selectedCountry.code}</span>
-          <img
+          <Image
             src={selectedCountry.flag}
             alt={`${selectedCountry.code} flag`}
             className="w-4 h-[15px]"
@@ -59,7 +60,7 @@ export default function ChangeLanguage() {
               onClick={() => handleCountryChange(country)}
             >
               <span className="text-sm">{country.code}</span>
-              <img
+              <Image
                 src={country.flag}
                 alt={`${country.code} flag`}
                 className="w-5 h-5"
