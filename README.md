@@ -30,8 +30,9 @@ Ervan Kurniawan – Web Developer, responsible for implementing the design and b
 
 **Development**
 
-- HTML5, CSS3, and JavaScript (for static websites).
-- CSS Framework: TailwindCSS.
-- Development Tools: Visual Studio Code, Git.
+- **NextJS 15**: Framework for server-side rendering and static site generation.
+- **TailwindCSS**: Utility-first CSS framework for custom styling.
+- **React**: Library for building user interface.
+- **TypeScript**: For adding static typing to JavaScript.
 
 ##
