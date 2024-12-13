@@ -34,5 +34,3 @@ Ervan Kurniawan – Web Developer, responsible for implementing the design and b
 - **TailwindCSS**: Utility-first CSS framework for custom styling.
 - **React**: Library for building user interface.
 - **TypeScript**: For adding static typing to JavaScript.
-
-##
