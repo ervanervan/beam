@@ -30,6 +30,8 @@ export default function ChangeLanguage() {
           <Image
             src={selectedCountry.flag}
             alt={`${selectedCountry.code} flag`}
+            width={16}
+            height={15}
             className="w-4 h-[15px]"
           />
         </span>
@@ -63,7 +65,9 @@ export default function ChangeLanguage() {
               <Image
                 src={country.flag}
                 alt={`${country.code} flag`}
-                className="w-5 h-5"
+                width={16}
+                height={16}
+                className="w-4 h-4"
               />
             </button>
           ))}
