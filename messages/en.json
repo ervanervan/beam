@@ -1,8 +1,18 @@
 {
+  "Navbar": {
+    "home": "Home",
+    "city": "City",
+    "partner": "Partner",
+    "vehicle": "Vehicle",
+    "company": "Company",
+    "contact": "Contact Us"
+  },
+
   "HomePage": {
     "title": "Hello world!",
     "about": "Go to the about page"
   },
+
   "Footer": {
     "BeamMobility": "Beam Mobility",
     "Copyright": "Copyright 2024 ©",

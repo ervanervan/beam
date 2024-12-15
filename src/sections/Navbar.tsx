@@ -10,16 +10,17 @@ import MenuIcon from "../../public/assets/icons/MenuIcon";
 import { useState } from "react";
 import CloseIcon from "../../public/assets/icons/CloseIcon";
 import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 const navLinks = [
-  // { label: "Home", path: "/" },
-  { label: "Kota", path: "/city" },
-  { label: "Mitra", path: "/partner" },
-  { label: "Pengendara", path: "#vehicle" },
-  { label: "Perusahaan", path: "#company" },
+  { key: "city", path: "/city" },
+  { key: "partner", path: "/partner" },
+  { key: "vehicle", path: "#vehicle" },
+  { key: "company", path: "#company" },
 ];
 
 export default function Navbar() {
+  const t = useTranslations("Navbar");
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
@@ -41,11 +42,11 @@ export default function Navbar() {
             <nav className="flex px-5 py-3 gap-6 rounded-xl bg-others-stack/50 backdrop-blur">
               {navLinks.map((link) => (
                 <Link
-                  key={link.label}
+                  key={link.key}
                   href={`/${currentLocale}${link.path}`}
                   className="px-2 text-secondary-50 font-medium text-sm"
                 >
-                  {link.label}
+                  {t(link.key)}
                 </Link>
               ))}
             </nav>
@@ -58,7 +59,7 @@ export default function Navbar() {
                 icon={<PhoneWhiteIcon />}
                 iconPosition="right"
               >
-                Hubungi Kami
+                {t("contact")}
               </Button>
             </div>
             <button
@@ -94,11 +95,11 @@ export default function Navbar() {
           <nav className="flex flex-col items-start gap-4 p-4 md:p-8 mt-10">
             {navLinks.map((link) => (
               <Link
-                key={link.label}
+                key={link.key}
                 href={`/${currentLocale}${link.path}`}
                 className="text-text-blackSecondary font-medium text-h3"
               >
-                {link.label}
+                {t(link.key)}
               </Link>
             ))}
           </nav>
@@ -110,7 +111,7 @@ export default function Navbar() {
               icon={<PhoneWhiteIcon />}
               iconPosition="right"
             >
-              Hubungi Kami
+              {t("contact")}
             </Button>
           </div>
         </div>

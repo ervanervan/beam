@@ -1,8 +1,18 @@
 {
+  "Navbar": {
+    "home": "Beranda",
+    "city": "Kota",
+    "partner": "Mitra",
+    "vehicle": "Pengendara",
+    "company": "Perusahaan",
+    "contact": "Hubungi Kami"
+  },
+
   "HomePage": {
     "title": "Hello DUnia!",
     "about": "Pergi ke halaman about"
   },
+
   "Footer": {
     "BeamMobility": "Beam Mobility",
     "Copyright": "Hak Cipta 2024 ©",
