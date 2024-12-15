@@ -103,6 +103,14 @@
     }
   },
 
+  "HelpHome": {
+    "title": "Still have questions?",
+    "description": "If you want to learn more about Beam or are interested in partnering with us, we are happy to assist you. Contact us now and let's create something great together.",
+    "buttons": {
+      "contact": "Contact us"
+    }
+  },
+
   "Footer": {
     "BeamMobility": "Beam Mobility",
     "Copyright": "Copyright 2024 ©",

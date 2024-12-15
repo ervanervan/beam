@@ -1,5 +1,6 @@
 import bulletIcon from "../../public/assets/images/bullet-icon.svg";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 type HelpProps = {
   title: string;
@@ -8,12 +9,9 @@ type HelpProps = {
   children: React.ReactNode;
 };
 
-export default function Help({
-  title,
-  description,
-  backgroundClass,
-  children,
-}: HelpProps) {
+export default function Help({ backgroundClass, children }: HelpProps) {
+  const t = useTranslations("HelpHome");
+
   return (
     <section>
       <div className="relative container max-w-xs md:max-w-[44rem] lg:max-w-6xl pt-10 border-x border-others-santasGray border-dashed">
@@ -40,10 +38,10 @@ export default function Help({
       >
         <div className="flex flex-col justify-center w-full md:max-w-[720px] h-[496px]">
           <h1 className="text-h2 md:text-h1 font-semibold text-text-whitePrimary">
-            {title}
+            {t("title")}
           </h1>
           <p className="text-body1 text-text-whiteSecondary mt-3">
-            {description}
+            {t("description")}
           </p>
           <div className="mt-8">{children}</div>
         </div>

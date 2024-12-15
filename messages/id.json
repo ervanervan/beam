@@ -103,6 +103,14 @@
     }
   },
 
+  "HelpHome": {
+    "title": "Masih ada pertanyaan?",
+    "description": "Jika ingin tahu lebih lanjut tentang Beam atau tertarik bermitra bersama kami, kami dengan senang hati membantu Anda. Hubungi kami sekarang dan mari ciptakan sesuatu yang hebat bersama.",
+    "buttons": {
+      "contact": "Hubungi kami"
+    }
+  },
+
   "Footer": {
     "BeamMobility": "Beam Mobility",
     "Copyright": "Hak Cipta 2024 ©",

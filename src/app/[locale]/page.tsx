@@ -17,6 +17,7 @@ import Link from "next/link";
 
 export default function Home() {
   const t = useTranslations("HeroHome.buttons");
+  const tr = useTranslations("HelpHome.buttons");
   return (
     <>
       <Hero
@@ -72,7 +73,7 @@ export default function Home() {
           icon={<PhoneWhiteIcon />}
           iconPosition="right"
         >
-          Hubungi kami
+          {tr("contact")}
         </Button>
       </Help>
     </>
