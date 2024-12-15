@@ -10,7 +10,6 @@ import { routing } from "@/i18n/routing";
 export const metadata: Metadata = {
   title: "Beam",
   description: "Beam - Modern Design Website Landing Page",
-  icons: "/favicon.ico",
 };
 
 interface RootLayoutProps {
@@ -20,15 +19,17 @@ interface RootLayoutProps {
 
 export default async function RootLayout({
   children,
-  params: { locale },
+  params,
 }: RootLayoutProps) {
+  // Await params to ensure they're available
+  const { locale } = await params;
+
   // Ensure that the incoming `locale` is valid
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
 
   // Providing all messages to the client
-  // side is the easiest way to get started
   const messages = await getMessages();
 
   return (

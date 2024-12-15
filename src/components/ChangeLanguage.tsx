@@ -1,6 +1,6 @@
 "use client";
 import { useLocale } from "next-intl";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import React, { useState, useTransition } from "react";
 import Image from "next/image";
 
@@ -19,6 +19,7 @@ const countries: Country[] = [
 export default function ChangeLanguage() {
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
+  const pathname = usePathname(); // Get the current pathname
   const localActive = useLocale();
 
   // Set the initial selected country based on the current locale
@@ -30,7 +31,9 @@ export default function ChangeLanguage() {
     const selectedValue = event.target.value;
 
     startTransition(() => {
-      router.replace(`/${selectedValue}`);
+      // Replace the locale part of the pathname with the selected language
+      const newPath = pathname.replace(/^\/[a-z]{2}/, `/${selectedValue}`);
+      router.replace(newPath); // Redirect to the updated path
     });
 
     const country = countries.find((c) => c.value === selectedValue);
