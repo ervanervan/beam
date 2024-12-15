@@ -8,9 +8,20 @@
     "contact": "Contactez-nous"
   },
 
-  "HomePage": {
-    "title": "Bonjour world!",
-    "about": "Go to the about page"
+  "HeroHome": {
+    "title": "Muévete libremente con Beam",
+    "description": "Cambia el futuro comenzando contigo mismo usando Beam ahora.",
+    "buttons": {
+      "viewGarage": "Ver Garaje Beam",
+      "downloadApp": "Descargar Aplicación"
+    }
+  },
+
+  "Mission": {
+    "tag": "Misión",
+    "text1": "Tenemos la misión de convertir pequeños viajes en mejores viajes, y",
+    "text2": "hacer que la ciudad camine",
+    "text3": "mejor para todos."
   },
 
   "Footer": {

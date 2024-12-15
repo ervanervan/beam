@@ -4,8 +4,10 @@ import Tag from "@/components/Tag";
 import vectorMisi from "../../public/assets/images/vector-misi.svg";
 import misiImage1 from "../../public/assets/images/misi-image1.png";
 import misiImage2 from "../../public/assets/images/misi-image2.png";
+import { useTranslations } from "next-intl";
 
 export default function Mission() {
+  const t = useTranslations("Mission");
   return (
     <section>
       <DashedBorderContainer>
@@ -21,7 +23,7 @@ export default function Mission() {
 
         {/* Tag */}
         <div className="flex justify-center">
-          <Tag>Misi</Tag>
+          <Tag>{t("tag")}</Tag>
         </div>
 
         {/* Content */}
@@ -45,10 +47,9 @@ export default function Mission() {
           {/* Text */}
           <div className="relative z-20">
             <h3 className="text-h4 md:text-h3 text-center text-text-blackPrimary font-medium mt-8">
-              Kami memiliki misi untuk mengubah perjalanan kecil menjadi
-              perjalanan yang lebih baik, dan{" "}
-              <span className="text-primary-500">membuat kota berjalan</span>{" "}
-              lebih baik untuk semua orang
+              {t("text1")}{" "}
+              <span className="text-primary-500">{t("text2")}</span>{" "}
+              {t("text3")}
             </h3>
           </div>
         </div>

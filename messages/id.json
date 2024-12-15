@@ -8,9 +8,20 @@
     "contact": "Hubungi Kami"
   },
 
-  "HomePage": {
-    "title": "Hello DUnia!",
-    "about": "Pergi ke halaman about"
+  "HeroHome": {
+    "title": "Gerak bebas dengan Beam",
+    "description": "Ubah masa depan mulai dari dirimu dengan menggunakan Beam sekarang.",
+    "buttons": {
+      "viewGarage": "Lihat Garasi Beam",
+      "downloadApp": "Unduh Aplikasi"
+    }
+  },
+
+  "Mission": {
+    "tag": "Misi",
+    "text1": "Kami memiliki misi untuk mengubah perjalanan kecil menjadi perjalanan yang lebih baik, dan",
+    "text2": "membuat kota berjalan",
+    "text3": "lebih baik untuk semua orang."
   },
 
   "Footer": {

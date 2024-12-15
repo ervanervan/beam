@@ -8,9 +8,20 @@
     "contact": "Contact Us"
   },
 
-  "HomePage": {
-    "title": "Hello world!",
-    "about": "Go to the about page"
+  "HeroHome": {
+    "title": "Move freely with Beam",
+    "description": "Change the future starting with yourself by using Beam now.",
+    "buttons": {
+      "viewGarage": "View Beam Garage",
+      "downloadApp": "Download App"
+    }
+  },
+
+  "Mission": {
+    "tag": "Mission",
+    "text1": "We have a mission to turn small journeys into better journeys, and",
+    "text2": "make the city walk",
+    "text3": "better for everyone."
   },
 
   "Footer": {

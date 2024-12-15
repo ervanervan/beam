@@ -16,7 +16,7 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 export default function Home() {
-  const t = useTranslations("HomePage");
+  const t = useTranslations("HeroHome.buttons");
   return (
     <>
       <Hero
@@ -27,7 +27,7 @@ export default function Home() {
         <>
           <div className="flex flex-col md:flex-row gap-3 mt-11">
             <Button variant="secondary" icon={<MapPinIcon />}>
-              Lihat Garasi Beam
+              {t("viewGarage")}
             </Button>
             <Link href={"/download"}>
               <Button
@@ -35,7 +35,7 @@ export default function Home() {
                 icon={<ArrowRightLongIcon />}
                 iconPosition="right"
               >
-                Unduh Aplikasi
+                {t("downloadApp")}
               </Button>
             </Link>
           </div>
