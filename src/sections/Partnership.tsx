@@ -1,103 +1,25 @@
 "use client";
+
 import Button from "@/components/Button";
 import DashedBorderContainer from "@/components/DashedBorderContainer";
 import Tag from "@/components/Tag";
+import PartnershipCard from "@/components/PartnershipCard";
+import { useTranslations } from "next-intl";
+import { useRef } from "react";
+import ArrowLeftBlackIcon from "../../public/assets/icons/ArrowLeftBlackIcon";
+import ArrowRightBlackIcon from "../../public/assets/icons/ArrowRightBlackIcon";
+import ArrowRightWhiteIcon from "../../public/assets/icons/ArrowRightWhiteIcon";
 import buildingIcon from "../../public/assets/images/building-office-icon.svg";
 import userGroupIcon from "../../public/assets/images/user-grup-icon.svg";
 import shieldCheckIcon from "../../public/assets/images/shield-check.svg";
 import partnershipImage1 from "../../public/assets/images/partnership-image1.png";
 import partnershipImage2 from "../../public/assets/images/partnership-image2.png";
 import partnershipImage3 from "../../public/assets/images/partnership-image3.png";
-import PartnershipCard from "@/components/PartnershipCard";
-import { useRef } from "react";
-
-const ArrowLeftIcon = () => (
-  <svg
-    width="16"
-    height="16"
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M7 13L2 8M2 8L7 3M2 8H14"
-      stroke="#1F1F1F"
-      strokeWidth="1.4"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
-
-const ArrowRightIcon = () => (
-  <svg
-    width="16"
-    height="16"
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M9 3L14 8M14 8L9 13M14 8H2"
-      stroke="#1F1F1F"
-      strokeWidth="1.4"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
-
-const ArrowRightWhiteIcon = () => (
-  <svg
-    width="20"
-    height="20"
-    viewBox="0 0 20 20"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M11.25 3.75L17.5 10M17.5 10L11.25 16.25M17.5 10H2.5"
-      stroke="#F9F9F9"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
-
-const partnershipData = [
-  {
-    title: "Bekerja sama, dengan kota",
-    subtitle:
-      "Kami berkomitmen penuh untuk bermitra dengan pemerintah di semua tingkatan untuk membuat kehidupan kota berjalan lebih baik bagi semua orang.",
-    imageSrc: partnershipImage1,
-    imageAlt: "Partnership Image 1",
-    iconSrc: buildingIcon,
-    buttonIcon: <ArrowRightWhiteIcon />,
-  },
-  {
-    title: "Bermitra, dengan kami",
-    subtitle:
-      "Di mana pun kami beroperasi, kami berusaha untuk mengembangkan operasi kami melalui kerja sama dengan komunitas setempat.",
-    imageSrc: partnershipImage2,
-    imageAlt: "Partnership Image 2",
-    iconSrc: userGroupIcon,
-    buttonIcon: <ArrowRightWhiteIcon />,
-  },
-  {
-    title: "Akademi keselamatan, beam",
-    subtitle:
-      "Kami bekerja keras untuk memastikan setiap pengguna Beam selalu memperhatikan lingkungan berkendara dan menggunakan ruang bersama kota dengan baik.",
-    imageSrc: partnershipImage3,
-    imageAlt: "Partnership Image 3",
-    iconSrc: shieldCheckIcon,
-    buttonIcon: <ArrowRightWhiteIcon />,
-  },
-];
 
 export default function Partnership() {
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const t = useTranslations("Partnership");
 
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
   const scrollAmount = 300; // Jumlah scroll saat tombol ditekan
 
   const handlePrev = () => {
@@ -111,38 +33,66 @@ export default function Partnership() {
       scrollContainerRef.current.scrollLeft += scrollAmount;
     }
   };
+
+  const partnershipData = [
+    {
+      title: t("partnerships.0.title"),
+      subtitle: t("partnerships.0.subtitle"),
+      imageSrc: partnershipImage1,
+      imageAlt: t("partnerships.0.imageAlt"),
+      iconSrc: buildingIcon,
+      buttonIcon: <ArrowRightWhiteIcon />,
+    },
+    {
+      title: t("partnerships.1.title"),
+      subtitle: t("partnerships.1.subtitle"),
+      imageSrc: partnershipImage2,
+      imageAlt: t("partnerships.1.imageAlt"),
+      iconSrc: userGroupIcon,
+      buttonIcon: <ArrowRightWhiteIcon />,
+    },
+    {
+      title: t("partnerships.2.title"),
+      subtitle: t("partnerships.2.subtitle"),
+      imageSrc: partnershipImage3,
+      imageAlt: t("partnerships.2.imageAlt"),
+      iconSrc: shieldCheckIcon,
+      buttonIcon: <ArrowRightWhiteIcon />,
+    },
+  ];
+
   return (
     <section>
       <DashedBorderContainer showTop={false} className="overflow-hidden">
         <div className="flex flex-col">
           <div className="md:max-w-lg">
             <div>
-              <Tag>Kemitraaan strategis</Tag>
+              <Tag>{t("tag")}</Tag>
             </div>
             <div className="mt-8">
               <h3 className="text-h3 font-medium text-text-blackPrimary">
-                Menata ulang kota Anda.
+                {t("title")}
               </h3>
               <p className="mt-3 text-body1 text-text-blackSecondary">
-                Kami ingin bermitra dengan Anda untuk mendorong sesuatu yang
-                baru hari ini.
+                {t("description")}
               </p>
             </div>
           </div>
           <div className="mt-9">
             <div className="md:flex items-center justify-between hidden">
-              {/* <span>1/4</span> */}
               <div></div>
               <div className="flex items-center gap-4 md:mr-9">
                 <Button
                   variant="secondary"
-                  icon={<ArrowLeftIcon />}
+                  icon={<ArrowLeftBlackIcon />}
                   onClick={handlePrev}
+                  aria-label={t("buttons.prev")}
                 />
                 <Button
                   variant="secondary"
-                  icon={<ArrowRightIcon />}
+                  icon={<ArrowRightBlackIcon />}
                   onClick={handleNext}
+                  aria-label={t("buttons.next")}
                 />
               </div>
             </div>

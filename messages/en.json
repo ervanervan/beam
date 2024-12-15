@@ -73,6 +73,36 @@
     ]
   },
 
+  "Partnership": {
+    "tag": "Strategic Partnership",
+    "title": "Reimagining your city.",
+    "description": "We want to partner with you to drive something new today.",
+    "partnerships": [
+      {
+        "title": "Collaborating, with cities",
+        "subtitle": "We are fully committed to partnering with governments at all levels to make city life work better for everyone.",
+        "imageAlt": "Partnership Image 1",
+        "iconAlt": "Building Office Icon"
+      },
+      {
+        "title": "Partnering, with us",
+        "subtitle": "Wherever we operate, we strive to grow our operations through collaboration with local communities.",
+        "imageAlt": "Partnership Image 2",
+        "iconAlt": "User Group Icon"
+      },
+      {
+        "title": "Beam safety academy",
+        "subtitle": "We work hard to ensure every Beam user is mindful of the riding environment and uses shared city spaces responsibly.",
+        "imageAlt": "Partnership Image 3",
+        "iconAlt": "Shield Check Icon"
+      }
+    ],
+    "buttons": {
+      "prev": "Previous",
+      "next": "Next"
+    }
+  },
+
   "Footer": {
     "BeamMobility": "Beam Mobility",
     "Copyright": "Copyright 2024 ©",

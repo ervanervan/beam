@@ -73,6 +73,36 @@
     ]
   },
 
+  "Partnership": {
+    "tag": "Asociación estratégica",
+    "title": "Reimaginando tu ciudad.",
+    "description": "Queremos asociarnos contigo para impulsar algo nuevo hoy.",
+    "partnerships": [
+      {
+        "title": "Colaborando, con ciudades",
+        "subtitle": "Estamos completamente comprometidos a asociarnos con gobiernos en todos los niveles para que la vida en la ciudad funcione mejor para todos.",
+        "imageAlt": "Imagen de Asociación 1",
+        "iconAlt": "Ícono de Oficina de Edificio"
+      },
+      {
+        "title": "Asociándote, con nosotros",
+        "subtitle": "Dondequiera que operemos, nos esforzamos por crecer nuestras operaciones mediante la colaboración con comunidades locales.",
+        "imageAlt": "Imagen de Asociación 2",
+        "iconAlt": "Ícono de Grupo de Usuarios"
+      },
+      {
+        "title": "Academia de seguridad, Beam",
+        "subtitle": "Trabajamos arduamente para garantizar que cada usuario de Beam sea consciente del entorno de conducción y utilice los espacios compartidos de la ciudad de manera responsable.",
+        "imageAlt": "Imagen de Asociación 3",
+        "iconAlt": "Ícono de Escudo de Seguridad"
+      }
+    ],
+    "buttons": {
+      "prev": "Anterior",
+      "next": "Siguiente"
+    }
+  },
+
   "Footer": {
     "BeamMobility": "Beam Mobility",
     "Copyright": "Droit d'auteur 2024 ©",

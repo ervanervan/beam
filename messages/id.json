@@ -73,6 +73,36 @@
     ]
   },
 
+  "Partnership": {
+    "tag": "Kemitraan strategis",
+    "title": "Menata ulang kota Anda.",
+    "description": "Kami ingin bermitra dengan Anda untuk mendorong sesuatu yang baru hari ini.",
+    "partnerships": [
+      {
+        "title": "Bekerja sama, dengan kota",
+        "subtitle": "Kami berkomitmen penuh untuk bermitra dengan pemerintah di semua tingkatan untuk membuat kehidupan kota berjalan lebih baik bagi semua orang.",
+        "imageAlt": "Partnership Image 1",
+        "iconAlt": "Building Office Icon"
+      },
+      {
+        "title": "Bermitra, dengan kami",
+        "subtitle": "Di mana pun kami beroperasi, kami berusaha untuk mengembangkan operasi kami melalui kerja sama dengan komunitas setempat.",
+        "imageAlt": "Partnership Image 2",
+        "iconAlt": "User Group Icon"
+      },
+      {
+        "title": "Akademi keselamatan, beam",
+        "subtitle": "Kami bekerja keras untuk memastikan setiap pengguna Beam selalu memperhatikan lingkungan berkendara dan menggunakan ruang bersama kota dengan baik.",
+        "imageAlt": "Partnership Image 3",
+        "iconAlt": "Shield Check Icon"
+      }
+    ],
+    "buttons": {
+      "prev": "Sebelumnya",
+      "next": "Berikutnya"
+    }
+  },
+
   "Footer": {
     "BeamMobility": "Beam Mobility",
     "Copyright": "Hak Cipta 2024 ©",
