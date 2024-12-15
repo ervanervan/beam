@@ -24,6 +24,18 @@
     "text3": "lebih baik untuk semua orang."
   },
 
+  "Priority": {
+    "tag": "Prioritas kami",
+    "title": "Keberlanjutan",
+    "description": "Beam adalah satu-satunya operator di Asia Pasifik yang memiliki Sertifikasi Netral Iklim. Dan karena kami berkomitmen untuk melangkah lebih jauh, kami bertekad untuk menuju Negatif Karbon (Carbon Negative) pada tahun 2025.",
+    "button": "Pelajari selengkapnya",
+    "tabs": {
+      "sustainability": "Keberlanjutan",
+      "safety": "Keamanan",
+      "community": "Komunitas"
+    }
+  },
+
   "Footer": {
     "BeamMobility": "Beam Mobility",
     "Copyright": "Hak Cipta 2024 ©",

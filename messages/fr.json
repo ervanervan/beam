@@ -24,6 +24,18 @@
     "text3": "mejor para todos."
   },
 
+  "Priority": {
+    "tag": "Nuestra Prioridad",
+    "title": "Sostenibilidad",
+    "description": "Beam es el único operador en Asia-Pacífico con Certificación de Neutralidad Climática. Y porque estamos comprometidos a ir más allá, estamos decididos a lograr Carbono Negativo para 2025.",
+    "button": "Saber más",
+    "tabs": {
+      "sustainability": "Sostenibilidad",
+      "safety": "Seguridad",
+      "community": "Comunidad"
+    }
+  },
+
   "Footer": {
     "BeamMobility": "Beam Mobility",
     "Copyright": "Droit d'auteur 2024 ©",
