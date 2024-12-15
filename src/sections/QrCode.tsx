@@ -3,8 +3,8 @@ import Image from "next/image";
 import React from "react";
 import qrCodeAndroid from "@/assets/images/qr-code-android.svg";
 import qrCodeIos from "@/assets/images/qr-code-ios.svg";
-import AndroidIcon from "@/assets/icons/AndroidIcon";
-import IosIcon from "@/assets/icons/IosIcon";
+import AndroidIcon from "../../public/assets/icons/AndroidIcon";
+import IosIcon from "../../public/assets/icons/IosIcon";
 
 export default function QrCode() {
   return (

@@ -1,17 +1,17 @@
 "use client";
-import ArrowLeftBlackIcon from "@/assets/icons/ArrowLeftBlackIcon";
-import ArrowRightBlackIcon from "@/assets/icons/ArrowRightBlackIcon";
+import ArrowLeftBlackIcon from "../../public/assets/icons/ArrowLeftBlackIcon";
+import ArrowRightBlackIcon from "../../public/assets/icons/ArrowRightBlackIcon";
 import Button from "@/components/Button";
 import DashedBorderContainer from "@/components/DashedBorderContainer";
 import Tag from "@/components/Tag";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import userTertimonial1 from "@/assets/images/user-testimonial1.svg";
-import userTertimonial2 from "@/assets/images/user-testimonial2.svg";
-import userTertimonial3 from "@/assets/images/user-testimonial3.svg";
-import partnerLogo1 from "@/assets/images/tertimonial-logo1.svg";
-import partnerLogo2 from "@/assets/images/tertimonial-logo2.svg";
-import partnerLogo3 from "@/assets/images/tertimonial-logo3.svg";
+import userTertimonial1 from "../../public/assets/images/user-testimonial1.svg";
+import userTertimonial2 from "../../public/assets/images/user-testimonial2.svg";
+import userTertimonial3 from "../../public/assets/images/user-testimonial3.svg";
+import partnerLogo1 from "../../public/assets/images/tertimonial-logo1.svg";
+import partnerLogo2 from "../../public/assets/images/tertimonial-logo2.svg";
+import partnerLogo3 from "../../public/assets/images/tertimonial-logo3.svg";
 
 const testimonial = [
   {

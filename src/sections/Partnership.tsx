@@ -2,12 +2,12 @@
 import Button from "@/components/Button";
 import DashedBorderContainer from "@/components/DashedBorderContainer";
 import Tag from "@/components/Tag";
-import buildingIcon from "@/assets/images/building-office-icon.svg";
-import userGroupIcon from "@/assets/images/user-grup-icon.svg";
-import shieldCheckIcon from "@/assets/images/shield-check.svg";
-import partnershipImage1 from "@/assets/images/partnership-image1.png";
-import partnershipImage2 from "@/assets/images/partnership-image2.png";
-import partnershipImage3 from "@/assets/images/partnership-image3.png";
+import buildingIcon from "../../public/assets/images/building-office-icon.svg";
+import userGroupIcon from "../../public/assets/images/user-grup-icon.svg";
+import shieldCheckIcon from "../../public/assets/images/shield-check.svg";
+import partnershipImage1 from "../../public/assets/images/partnership-image1.png";
+import partnershipImage2 from "../../public/assets/images/partnership-image2.png";
+import partnershipImage3 from "../../public/assets/images/partnership-image3.png";
 import PartnershipCard from "@/components/PartnershipCard";
 import { useRef } from "react";
 

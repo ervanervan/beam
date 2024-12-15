@@ -1,9 +1,9 @@
 import Button from "@/components/Button";
 import DashedBorderContainer from "@/components/DashedBorderContainer";
 import Tag from "@/components/Tag";
-import newsImage1 from "@/assets/images/news-image1.png";
-import newsImage2 from "@/assets/images/news-image2.png";
-import newsImage3 from "@/assets/images/news-image3.png";
+import newsImage1 from "../../public/assets/images/news-image1.png";
+import newsImage2 from "../../public/assets/images/news-image2.png";
+import newsImage3 from "../../public/assets/images/news-image3.png";
 import NewsCard from "@/components/NewsCard";
 
 const ArrowRightIcon = () => (

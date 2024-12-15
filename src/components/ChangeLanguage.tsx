@@ -2,7 +2,12 @@
 import Image from "next/image";
 import React, { useState } from "react";
 
-const countries = [
+interface Country {
+  code: string;
+  flag: string;
+}
+
+const countries: Country[] = [
   { code: "ID", flag: "/flags/id.svg" },
   { code: "EN", flag: "/flags/en.svg" },
   { code: "FR", flag: "/flags/fr.svg" },
@@ -12,7 +17,7 @@ export default function ChangeLanguage() {
   const [selectedCountry, setSelectedCountry] = useState(countries[0]);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  const handleCountryChange = (country: { code: string; flag: string }) => {
+  const handleCountryChange = (country: Country) => {
     setSelectedCountry(country);
     setIsDropdownOpen(false);
   };

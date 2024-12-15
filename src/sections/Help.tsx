@@ -1,4 +1,4 @@
-import bulletIcon from "@/assets/images/bullet-icon.svg";
+import bulletIcon from "../../public/assets/images/bullet-icon.svg";
 import Image from "next/image";
 
 type HelpProps = {

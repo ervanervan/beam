@@ -1,4 +1,4 @@
-import { AccessibilityIcon } from "@/assets/icons/AccessibilityIcon";
+import { AccessibilityIcon } from "../../../../public/assets/icons/AccessibilityIcon";
 import Button from "@/components/Button";
 import Hero from "@/sections/Hero";
 import QrCode from "@/sections/QrCode";

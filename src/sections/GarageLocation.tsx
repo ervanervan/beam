@@ -2,8 +2,8 @@ import DashedBorderContainer from "@/components/DashedBorderContainer";
 import Tag from "@/components/Tag";
 import Image from "next/image";
 import React from "react";
-import globeImage from "@/assets/images/globe-image.png";
-import vectorLocationGarage from "@/assets/images/vector-location-garage.svg";
+import globeImage from "../../public/assets/images/globe-image.png";
+import vectorLocationGarage from "../../public/assets/images/vector-location-garage.svg";
 import CountryList from "@/components/CountryList";
 
 export interface Country {

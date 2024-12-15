@@ -1,11 +1,11 @@
 import DashedBorderContainer from "@/components/DashedBorderContainer";
 import VehicleSafetyCard from "@/components/VehicleSafetyCard";
 import React from "react";
-import vehicleSafetyImage1 from "@/assets/images/vehicle-safety-card-image1.png";
-import vehicleSafetyImage2 from "@/assets/images/vehicle-safety-card-image2.png";
-import vehicleSafetyImage3 from "@/assets/images/vehicle-safety-card-image3.png";
-import vehicleSafetyImage4 from "@/assets/images/vehicle-safety-card-image4.png";
-import vehicleSafetyImage5 from "@/assets/images/vehicle-safety-card-image5.png";
+import vehicleSafetyImage1 from "../../public/assets/images/vehicle-safety-card-image1.png";
+import vehicleSafetyImage2 from "../../public/assets/images/vehicle-safety-card-image2.png";
+import vehicleSafetyImage3 from "../../public/assets/images/vehicle-safety-card-image3.png";
+import vehicleSafetyImage4 from "../../public/assets/images/vehicle-safety-card-image4.png";
+import vehicleSafetyImage5 from "../../public/assets/images/vehicle-safety-card-image5.png";
 
 export default function VehicleSafety() {
   return (

@@ -3,13 +3,13 @@ import Button from "@/components/Button";
 import DashedBorderContainer from "@/components/DashedBorderContainer";
 import Tag from "@/components/Tag";
 import Image from "next/image";
-import imageFeature1 from "@/assets/images/feature-image1.png";
-import imageFeature2 from "@/assets/images/feature-image1.png";
-import imageFeature3 from "@/assets/images/feature-image1.png";
+import imageFeature1 from "../../public/assets/images/feature-image1.png";
+import imageFeature2 from "../../public/assets/images/feature-image1.png";
+import imageFeature3 from "../../public/assets/images/feature-image1.png";
 import { useState } from "react";
-import ArrowRightBlackIcon from "@/assets/icons/ArrowRightBlackIcon";
-import ArrowLeftBlackIcon from "@/assets/icons/ArrowLeftBlackIcon";
-import { ArrowRightLongIcon } from "@/assets/icons/ArrowRightLongIcon";
+import ArrowRightBlackIcon from "../../public/assets/icons/ArrowRightBlackIcon";
+import ArrowLeftBlackIcon from "../../public/assets/icons/ArrowLeftBlackIcon";
+import { ArrowRightLongIcon } from "../../public/assets/icons/ArrowRightLongIcon";
 
 type FeatureProps = {
   tag: string;

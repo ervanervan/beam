@@ -1,6 +1,6 @@
 "use client";
-import { AccessibilityIcon } from "@/assets/icons/AccessibilityIcon";
-import { ArrowRightLongIcon } from "@/assets/icons/ArrowRightLongIcon";
+import { AccessibilityIcon } from "../../../../public/assets/icons/AccessibilityIcon";
+import { ArrowRightLongIcon } from "../../../../public/assets/icons/ArrowRightLongIcon";
 import Button from "@/components/Button";
 import GarageLocation from "@/sections/GarageLocation";
 import Help from "@/sections/Help";

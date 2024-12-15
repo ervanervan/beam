@@ -1,30 +1,36 @@
 "use client";
+
 import Image from "next/image";
-import logoPrimary from "@/assets/images/logo-primary.svg";
+import logoPrimary from "../../public/assets/images/logo-primary.svg";
 import Button from "@/components/Button";
 import ChangeLanguage from "@/components/ChangeLanguage";
-import { PhoneWhiteIcon } from "@/assets/icons/PhoneWhiteIcon";
+import { PhoneWhiteIcon } from "../../public/assets/icons/PhoneWhiteIcon";
 import Link from "next/link";
-import MenuIcon from "@/assets/icons/MenuIcon";
+import MenuIcon from "../../public/assets/icons/MenuIcon";
 import { useState } from "react";
-import CloseIcon from "@/assets/icons/CloseIcon";
+import CloseIcon from "../../public/assets/icons/CloseIcon";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
-  // { label: "Home", href: "#" },
-  { label: "Kota", href: "/city" },
-  { label: "Mitra", href: "/partner" },
-  { label: "Pengendara", href: "#vehicle" },
-  { label: "Perusahaan", href: "#company" },
+  // { label: "Home", path: "/" },
+  { label: "Kota", path: "/city" },
+  { label: "Mitra", path: "/partner" },
+  { label: "Pengendara", path: "#vehicle" },
+  { label: "Perusahaan", path: "#company" },
 ];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+
+  // Extract the current locale from the path (e.g., /en, /id)
+  const currentLocale = pathname.split("/")[1] || "en"; // Default to "en"
 
   return (
     <header className="absolute pt-4 md:pt-8 lg:pt-0 lg:top-14 left-0 w-full z-30 bg-transparent">
       <div className="container mx-auto lg:px-16">
         <div className="grid grid-cols-2 lg:grid-cols-3 items-center">
-          <Link href={"/"}>
+          <Link href={`/${currentLocale}`}>
             <Image
               src={logoPrimary}
               alt="Logo image"
@@ -34,13 +40,13 @@ export default function Navbar() {
           <div className="lg:flex items-center justify-center hidden">
             <nav className="flex px-5 py-3 gap-6 rounded-xl bg-others-stack/50 backdrop-blur">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.label}
-                  href={link.href}
+                  href={`/${currentLocale}${link.path}`}
                   className="px-2 text-secondary-50 font-medium text-sm"
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
             </nav>
           </div>
@@ -71,7 +77,7 @@ export default function Navbar() {
           }`}
         >
           <div className="flex items-center justify-between p-4 md:p-8">
-            <Link href={"/"}>
+            <Link href={`/${currentLocale}`}>
               <Image
                 src={logoPrimary}
                 alt="Logo image"
@@ -87,13 +93,13 @@ export default function Navbar() {
           </div>
           <nav className="flex flex-col items-start gap-4 p-4 md:p-8 mt-10">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.label}
-                href={link.href}
+                href={`/${currentLocale}${link.path}`}
                 className="text-text-blackSecondary font-medium text-h3"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </nav>
           <div className="border-t border-text-blackTertiary mx-4 md:mx-8 my-5"></div>

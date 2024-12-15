@@ -1,8 +1,8 @@
 import DashedBorderContainer from "@/components/DashedBorderContainer";
 import Tag from "@/components/Tag";
 import VehicleCard from "@/components/VehicleCard";
-import vehicleImage1 from "@/assets/images/vehicle-image1.png";
-import vehicleImage2 from "@/assets/images/vehicle-image2.png";
+import vehicleImage1 from "../../public/assets/images/vehicle-image1.png";
+import vehicleImage2 from "../../public/assets/images/vehicle-image2.png";
 
 const vehicles = [
   {

@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import Image from "next/image";
-import bulletIcon from "@/assets/images/bullet-icon.svg";
+import bulletIcon from "../../public/assets/images/bullet-icon.svg";
 import { twMerge } from "tailwind-merge";
 
 interface DashedBorderContainerProps {

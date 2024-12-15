@@ -2,8 +2,8 @@ import DashedBorderContainer from "@/components/DashedBorderContainer";
 import Tag from "@/components/Tag";
 import Image from "next/image";
 import React from "react";
-import CheckCircleIcon from "@/assets/icons/CheckCircleIcon";
-import vectorBenefit from "@/assets/images/vector-benefit.svg";
+import CheckCircleIcon from "../../public/assets/icons/CheckCircleIcon";
+import vectorBenefit from "../../public/assets/images/vector-benefit.svg";
 
 export default function Benefits() {
   return (

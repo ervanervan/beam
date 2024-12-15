@@ -1,10 +1,10 @@
 import DashedBorderContainer from "@/components/DashedBorderContainer";
 import Image from "next/image";
-import vectorFooterImage from "@/assets/images/vector-footer.png";
-import logoPrimary from "@/assets/images/logo-primary.svg";
-import instagramIcon from "@/assets/images/instagram-icon.svg";
-import facebookIcon from "@/assets/images/facebook-icon.svg";
-import linkedinIcon from "@/assets/images/linkedin-icon.svg";
+import vectorFooterImage from "../../public/assets/images/vector-footer.png";
+import logoPrimary from "../../public/assets/images/logo-primary.svg";
+import instagramIcon from "../../public/assets/images/instagram-icon.svg";
+import facebookIcon from "../../public/assets/images/facebook-icon.svg";
+import linkedinIcon from "../../public/assets/images/linkedin-icon.svg";
 
 const footerLinks = [
   {

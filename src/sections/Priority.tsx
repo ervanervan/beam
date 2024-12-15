@@ -2,8 +2,8 @@ import Button from "@/components/Button";
 import DashedBorderContainer from "@/components/DashedBorderContainer";
 import Tag from "@/components/Tag";
 import Image from "next/image";
-import imageProgram1 from "@/assets/images/priority-image1.png";
-import iconProgramBeam from "@/assets/images/program-beam-icon.svg";
+import imageProgram1 from "../../public/assets/images/priority-image1.png";
+import iconProgramBeam from "../../public/assets/images/program-beam-icon.svg";
 
 const ArrowRightIcon = () => (
   <svg
