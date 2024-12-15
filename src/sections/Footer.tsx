@@ -5,38 +5,41 @@ import logoPrimary from "../../public/assets/images/logo-primary.svg";
 import instagramIcon from "../../public/assets/images/instagram-icon.svg";
 import facebookIcon from "../../public/assets/images/facebook-icon.svg";
 import linkedinIcon from "../../public/assets/images/linkedin-icon.svg";
+import { useTranslations } from "next-intl";
 
 const footerLinks = [
   {
-    title: "Kota",
-    links: ["Kota yang beroperasi"],
+    key: "Kota",
+    links: ["KotaYangBeroperasi"],
   },
   {
-    title: "Mitra",
-    links: ["Bermitra dengan kami"],
+    key: "Mitra",
+    links: ["BermitraDenganKami"],
   },
   {
-    title: "Pengendara",
+    key: "Pengendara",
     links: [
-      "Perjalanan grup",
-      "#BeamBooster",
-      "Pesan kendaraan Beam",
-      "Berkendara dengan kami",
+      "PerjalananGrup",
+      "BeamBooster",
+      "PesanKendaraanBeam",
+      "BerkendaraDenganKami",
     ],
   },
   {
-    title: "Perusahaan",
+    key: "Perusahaan",
     links: [
-      "Unduh aplikasi",
+      "UnduhAplikasi",
       "Karir",
-      "Kendaraan Kami",
-      "Prioritas Kami",
+      "KendaraanKami",
+      "PrioritasKami",
       "Berita",
     ],
   },
 ];
 
 export default function Footer() {
+  const t = useTranslations("Footer");
+
   return (
     <footer className="relative pb-5">
       <DashedBorderContainer showBottom={false}>
@@ -46,12 +49,13 @@ export default function Footer() {
               <Image src={logoPrimary} alt="Beam logo" className="size-12" />
             </div>
             <div>
-              <h2 className="text-h4 md:text-h2 text-primary-500 font-semibold">
-                Beam <br className="hidden md:block" /> Mobility
+              <h2 className="w-full md:w-40 text-h4 md:text-h2 text-primary-500 font-semibold">
+                {t("BeamMobility")}
               </h2>
               <div className="mt-4 md:mt-8">
                 <p className="text-body4 text-text-blackSecondary">
-                  Hak Cipta 2024 © <br /> Beam Mobility Holdings Pte. Ltd.
+                  <span>{t("Copyright")}</span> <br />
+                  <span>{t("CopyrightCompany")}</span>
                 </p>
               </div>
               <div className="mt-5 flex items-center gap-3">
@@ -85,7 +89,7 @@ export default function Footer() {
               {footerLinks.map((section, index) => (
                 <div key={index}>
                   <h3 className="font-medium text-text-blackPrimary">
-                    {section.title}
+                    {t(`Links.${section.key}`)}
                   </h3>
                   <div className="flex flex-col gap-1 mt-3">
                     {section.links.map((link, linkIndex) => (
@@ -94,7 +98,7 @@ export default function Footer() {
                         href="#"
                         className="block text-body4 text-tertiary-700"
                       >
-                        {link}
+                        {t(`Links.${link}`)}
                       </a>
                     ))}
                   </div>

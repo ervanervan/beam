@@ -2,5 +2,27 @@
   "HomePage": {
     "title": "Hello world!",
     "about": "Go to the about page"
+  },
+  "Footer": {
+    "BeamMobility": "Beam Mobility",
+    "Copyright": "Copyright 2024 ©",
+    "CopyrightCompany": "Beam Mobility Holdings Pte. Ltd.",
+    "Links": {
+      "Kota": "Cities",
+      "Mitra": "Partners",
+      "Pengendara": "Riders",
+      "Perusahaan": "Company",
+      "KotaYangBeroperasi": "Operating cities",
+      "BermitraDenganKami": "Partner with us",
+      "PerjalananGrup": "Group rides",
+      "BeamBooster": "#BeamBooster",
+      "PesanKendaraanBeam": "Book a Beam vehicle",
+      "BerkendaraDenganKami": "Ride with us",
+      "UnduhAplikasi": "Download the app",
+      "Karir": "Careers",
+      "KendaraanKami": "Our vehicles",
+      "PrioritasKami": "Our priorities",
+      "Berita": "News"
+    }
   }
 }

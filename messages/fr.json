@@ -2,5 +2,27 @@
   "HomePage": {
     "title": "Bonjour world!",
     "about": "Go to the about page"
+  },
+  "Footer": {
+    "BeamMobility": "Beam Mobility",
+    "Copyright": "Droit d'auteur 2024 ©",
+    "CopyrightCompany": "Beam Mobility Holdings Pte. Ltd.",
+    "Links": {
+      "Kota": "Villes",
+      "Mitra": "Partenaires",
+      "Pengendara": "Cavaliers",
+      "Perusahaan": "Entreprise",
+      "KotaYangBeroperasi": "Villes opérationnelles",
+      "BermitraDenganKami": "Devenez partenaire",
+      "PerjalananGrup": "Balades en groupe",
+      "BeamBooster": "#BeamBooster",
+      "PesanKendaraanBeam": "Réserver un véhicule Beam",
+      "BerkendaraDenganKami": "Roulez avec nous",
+      "UnduhAplikasi": "Téléchargez l'application",
+      "Karir": "Carrières",
+      "KendaraanKami": "Nos véhicules",
+      "PrioritasKami": "Nos priorités",
+      "Berita": "Actualités"
+    }
   }
 }

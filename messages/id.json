@@ -2,5 +2,27 @@
   "HomePage": {
     "title": "Hello DUnia!",
     "about": "Pergi ke halaman about"
+  },
+  "Footer": {
+    "BeamMobility": "Beam Mobility",
+    "Copyright": "Hak Cipta 2024 ©",
+    "CopyrightCompany": "Beam Mobility Holdings Pte. Ltd.",
+    "Links": {
+      "Kota": "Kota",
+      "Mitra": "Mitra",
+      "Pengendara": "Pengendara",
+      "Perusahaan": "Perusahaan",
+      "KotaYangBeroperasi": "Kota yang beroperasi",
+      "BermitraDenganKami": "Bermitra dengan kami",
+      "PerjalananGrup": "Perjalanan grup",
+      "BeamBooster": "#BeamBooster",
+      "PesanKendaraanBeam": "Pesan kendaraan Beam",
+      "BerkendaraDenganKami": "Berkendara dengan kami",
+      "UnduhAplikasi": "Unduh aplikasi",
+      "Karir": "Karir",
+      "KendaraanKami": "Kendaraan Kami",
+      "PrioritasKami": "Prioritas Kami",
+      "Berita": "Berita"
+    }
   }
 }
