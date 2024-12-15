@@ -49,6 +49,30 @@
     "button": "En savoir plus"
   },
 
+  "News": {
+    "tag": "Actualités",
+    "title": "Dernières nouvelles",
+    "description": "Restez informé des dernières nouvelles et des mises à jour passionnantes sur notre ville, notre communauté et nos programmes.",
+    "button": "Voir Plus",
+    "news": [
+      {
+        "category": "APAC",
+        "description": "Beam accélère sa croissance avec une hausse de 36% des revenus bruts, atteignant la rentabilité de l'EBITDA ajusté.",
+        "date": "07 Octobre 2024"
+      },
+      {
+        "category": "APAC",
+        "description": "Beam initie l'intégration de la technologie de bouclier pour piétons.",
+        "date": "26 Septembre 2024"
+      },
+      {
+        "category": "APAC",
+        "description": "Beam lance une campagne estivale de sécurité",
+        "date": "12 Septembre 2024"
+      }
+    ]
+  },
+
   "Footer": {
     "BeamMobility": "Beam Mobility",
     "Copyright": "Droit d'auteur 2024 ©",

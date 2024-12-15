@@ -49,6 +49,30 @@
     "button": "Learn more"
   },
 
+  "News": {
+    "tag": "News",
+    "title": "Latest News",
+    "description": "Stay updated with the latest news and exciting updates about our city, community, and programs.",
+    "button": "Show More",
+    "news": [
+      {
+        "category": "APAC",
+        "description": "Beam accelerates growth with a 36% surge in gross revenue, achieving adjusted EBITDA profitability.",
+        "date": "07 October 2024"
+      },
+      {
+        "category": "APAC",
+        "description": "Beam initiates pedestrian shield technology integration.",
+        "date": "26 September 2024"
+      },
+      {
+        "category": "APAC",
+        "description": "Beam launches summer safety campaign",
+        "date": "12 September 2024"
+      }
+    ]
+  },
+
   "Footer": {
     "BeamMobility": "Beam Mobility",
     "Copyright": "Copyright 2024 ©",

@@ -5,66 +5,50 @@ import newsImage1 from "../../public/assets/images/news-image1.png";
 import newsImage2 from "../../public/assets/images/news-image2.png";
 import newsImage3 from "../../public/assets/images/news-image3.png";
 import NewsCard from "@/components/NewsCard";
-
-const ArrowRightIcon = () => (
-  <svg
-    width="17"
-    height="16"
-    viewBox="0 0 17 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M12 5.5L14.5 8M14.5 8L12 10.5M14.5 8H2.5"
-      stroke="#F9F9F9"
-      strokeWidth="1.3"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
-
-const newsData = [
-  {
-    imageSrc: newsImage1,
-    imageAlt: "News image 1",
-    category: "APAC",
-    description:
-      "Beam mempercepat pertumbuhan dengan lonjakan pendapatan bruto sebesar 36%, mencapai profitabilitas EBITDA yang disesuaikan.",
-    date: "07 Oktober 2024",
-  },
-  {
-    imageSrc: newsImage2,
-    imageAlt: "News image 2",
-    category: "APAC",
-    description: "Beam memulai integrasi teknologi perisai pejalan kaki.",
-    date: "26 September 2024",
-  },
-  {
-    imageSrc: newsImage3,
-    imageAlt: "News image 3",
-    category: "APAC",
-    description: "Beam meluncurkan kampanye musim panas keselamatan",
-    date: "12 September 2024",
-  },
-];
+import { ArrowRightLongIcon } from "../../public/assets/icons/ArrowRightLongIcon";
+import { useTranslations } from "next-intl";
 
 export default function News() {
+  const t = useTranslations("News");
+
+  const newsData = [
+    {
+      imageSrc: newsImage1,
+      imageAlt: "News image 1",
+      category: t("news.0.category"),
+      description: t("news.0.description"),
+      date: t("news.0.date"),
+    },
+    {
+      imageSrc: newsImage2,
+      imageAlt: "News image 2",
+      category: t("news.1.category"),
+      description: t("news.1.description"),
+      date: t("news.1.date"),
+    },
+    {
+      imageSrc: newsImage3,
+      imageAlt: "News image 3",
+      category: t("news.2.category"),
+      description: t("news.2.description"),
+      date: t("news.2.date"),
+    },
+  ];
+
   return (
     <section>
       <DashedBorderContainer>
         <div>
           <div className="flex flex-col items-center max-w-2xl mx-auto">
             <div>
-              <Tag>Berita</Tag>
+              <Tag>{t("tag")}</Tag>
             </div>
             <div className="mt-8 flex flex-col gap-3 items-center">
               <h3 className="text-h3 font-medium text-text-blackPrimary">
-                Berita terbaru
+                {t("title")}
               </h3>
               <p className="text-body1 text-text-blackSecondary text-center">
-                Tetap terinformasi dengan kabar terbaru dan update menarik
-                seputar kota, komunitas, dan program kami.
+                {t("description")}
               </p>
             </div>
           </div>
@@ -83,10 +67,10 @@ export default function News() {
           <div className="mt-11 flex justify-center">
             <Button
               variant="tertiary"
-              icon={<ArrowRightIcon />}
+              icon={<ArrowRightLongIcon />}
               iconPosition="right"
             >
-              Tampilkan Lebih Banyak
+              {t("button")}
             </Button>
           </div>
         </div>

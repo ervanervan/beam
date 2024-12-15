@@ -49,6 +49,30 @@
     "button": "Pelajari selengkapnya"
   },
 
+  "News": {
+    "tag": "Berita",
+    "title": "Berita terbaru",
+    "description": "Tetap terinformasi dengan kabar terbaru dan update menarik seputar kota, komunitas, dan program kami.",
+    "button": "Tampilkan Lebih Banyak",
+    "news": [
+      {
+        "category": "APAC",
+        "description": "Beam mempercepat pertumbuhan dengan lonjakan pendapatan bruto sebesar 36%, mencapai profitabilitas EBITDA yang disesuaikan.",
+        "date": "07 Oktober 2024"
+      },
+      {
+        "category": "APAC",
+        "description": "Beam memulai integrasi teknologi perisai pejalan kaki.",
+        "date": "26 September 2024"
+      },
+      {
+        "category": "APAC",
+        "description": "Beam meluncurkan kampanye musim panas keselamatan",
+        "date": "12 September 2024"
+      }
+    ]
+  },
+
   "Footer": {
     "BeamMobility": "Beam Mobility",
     "Copyright": "Hak Cipta 2024 ©",
