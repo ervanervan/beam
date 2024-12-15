@@ -36,6 +36,12 @@
     }
   },
 
+  "Vehicle": {
+    "tag": "Vehículos",
+    "title": "Vehículos",
+    "description": "Nuestros scooters y bicicletas eléctricas, diseñados para compartir, brindan una experiencia de conducción cómoda y confiable adaptada a sus necesidades diarias."
+  },
+
   "Footer": {
     "BeamMobility": "Beam Mobility",
     "Copyright": "Droit d'auteur 2024 ©",

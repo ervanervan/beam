@@ -36,6 +36,12 @@
     }
   },
 
+  "Vehicle": {
+    "tag": "Kendaraan",
+    "title": "Kendaraan",
+    "description": "Skuter dan sepeda listrik kami, dirancang untuk berbagi, memberikan pengalaman berkendara yang nyaman dan andal, sesuai dengan kebutuhan sehari-hari."
+  },
+
   "Footer": {
     "BeamMobility": "Beam Mobility",
     "Copyright": "Hak Cipta 2024 ©",

@@ -3,6 +3,7 @@ import Tag from "@/components/Tag";
 import VehicleCard from "@/components/VehicleCard";
 import vehicleImage1 from "../../public/assets/images/vehicle-image1.png";
 import vehicleImage2 from "../../public/assets/images/vehicle-image2.png";
+import { useTranslations } from "next-intl";
 
 const vehicles = [
   {
@@ -18,9 +19,7 @@ const vehicles = [
 ];
 
 export default function Vehicle() {
-  // const handleButtonClick = (title: string) => {
-  //   console.log(`Button clicked for ${title}`);
-  // };
+  const t = useTranslations("Vehicle");
 
   return (
     <section>
@@ -28,16 +27,14 @@ export default function Vehicle() {
         <div>
           <div className="flex flex-col items-center max-w-2xl mx-auto">
             <div>
-              <Tag>Kendaraan</Tag>
+              <Tag>{t("tag")}</Tag>
             </div>
             <div className="mt-8 flex flex-col gap-3 items-center">
               <h3 className="text-h3 font-medium text-text-blackPrimary">
-                Kendaraan
+                {t("title")}
               </h3>
               <p className="text-body1 text-text-blackSecondary text-center">
-                Skuter dan sepeda listrik kami, dirancang untuk berbagi,
-                memberikan pengalaman berkendara yang nyaman dan andal, sesuai
-                dengan kebutuhan sehari-hari.
+                {t("description")}
               </p>
             </div>
           </div>

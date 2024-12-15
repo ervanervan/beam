@@ -36,6 +36,12 @@
     }
   },
 
+  "Vehicle": {
+    "tag": "Vehicles",
+    "title": "Vehicles",
+    "description": "Our electric scooters and bikes, designed for sharing, provide a comfortable and reliable riding experience tailored to your daily needs."
+  },
+
   "Footer": {
     "BeamMobility": "Beam Mobility",
     "Copyright": "Copyright 2024 ©",
