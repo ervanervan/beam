@@ -42,6 +42,13 @@
     "description": "Nuestros scooters y bicicletas eléctricas, diseñados para compartir, brindan una experiencia de conducción cómoda y confiable adaptada a sus necesidades diarias."
   },
 
+  "FeatureHome": {
+    "tag": "Nos Fonctionnalités",
+    "title": "Voyage en groupe",
+    "description": "Profitez de voyages passionnants avec vos amis et votre famille grâce à la fonctionnalité Voyage en groupe, où vous pouvez voyager ensemble avec un seul compte. Cette fonctionnalité est disponible dans certaines villes.",
+    "button": "En savoir plus"
+  },
+
   "Footer": {
     "BeamMobility": "Beam Mobility",
     "Copyright": "Droit d'auteur 2024 ©",

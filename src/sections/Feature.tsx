@@ -10,6 +10,7 @@ import { useState } from "react";
 import ArrowRightBlackIcon from "../../public/assets/icons/ArrowRightBlackIcon";
 import ArrowLeftBlackIcon from "../../public/assets/icons/ArrowLeftBlackIcon";
 import { ArrowRightLongIcon } from "../../public/assets/icons/ArrowRightLongIcon";
+import { useTranslations } from "next-intl";
 
 type FeatureProps = {
   tag: string;
@@ -38,18 +39,19 @@ export default function Feature({ tag, title, description }: FeatureProps) {
       (prevIndex) => (prevIndex - 1 + images.length) % images.length
     );
   };
+  const t = useTranslations("FeatureHome");
 
   return (
     <section>
       <DashedBorderContainer showTop={false}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-10 items-center">
           <div className="flex flex-col">
-            <Tag>{tag}</Tag>
+            <Tag>{t("tag")}</Tag>
             <h3 className="mt-8 text-text-blackPrimary text-h3 font-medium">
-              {title}
+              {t("title")}
             </h3>
             <p className="mt-3 text-text-blackSecondary text-body1">
-              {description}
+              {t("description")}
             </p>
             <div className="mt-6">
               <Button
@@ -57,7 +59,7 @@ export default function Feature({ tag, title, description }: FeatureProps) {
                 icon={<ArrowRightLongIcon />}
                 iconPosition="right"
               >
-                Pelajari selengkapnya
+                {t("button")}
               </Button>
             </div>
           </div>

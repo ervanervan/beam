@@ -42,6 +42,13 @@
     "description": "Skuter dan sepeda listrik kami, dirancang untuk berbagi, memberikan pengalaman berkendara yang nyaman dan andal, sesuai dengan kebutuhan sehari-hari."
   },
 
+  "FeatureHome": {
+    "tag": "Fitur kami",
+    "title": "Perjalanan grup",
+    "description": "Nikmati perjalanan seru bersama teman dan keluarga dengan fitur Perjalanan Grup, di mana Anda dapat berkendara bersama menggunakan satu akun. Fitur ini tersedia di beberapa kota tertentu.",
+    "button": "Pelajari selengkapnya"
+  },
+
   "Footer": {
     "BeamMobility": "Beam Mobility",
     "Copyright": "Hak Cipta 2024 ©",
