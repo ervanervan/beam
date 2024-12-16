@@ -12,11 +12,11 @@ import ArrowLeftBlackIcon from "../../public/assets/icons/ArrowLeftBlackIcon";
 import { ArrowRightLongIcon } from "../../public/assets/icons/ArrowRightLongIcon";
 import { useTranslations } from "next-intl";
 
-type FeatureProps = {
-  tag: string;
-  title: string;
-  description: string;
-};
+// type FeatureProps = {
+//   tag: string;
+//   title: string;
+//   description: string;
+// };
 
 const images = [
   { src: imageFeature1, alt: "Feature image 1" },
@@ -24,7 +24,7 @@ const images = [
   { src: imageFeature3, alt: "Feature image 3" },
 ];
 
-export default function Feature({ tag, title, description }: FeatureProps) {
+export default function Feature() {
   // State untuk menyimpan indeks gambar yang sedang ditampilkan
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
