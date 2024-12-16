@@ -1,12 +1,18 @@
 import { getRequestConfig } from "next-intl/server";
 import { routing } from "./routing";
 
-export default getRequestConfig(async ({ requestLocale }) => {
-  // This typically corresponds to the `[locale]` segment
-  let locale = await requestLocale;
+// Tentukan tipe Locale
+type Locale = "en" | "fr" | "id"; // Sesuaikan dengan routing.locales
 
-  // Ensure that a valid locale is used
-  if (!locale || !routing.locales.includes(locale as any)) {
+export default getRequestConfig(async ({ requestLocale }) => {
+  // Menunggu hasil requestLocale yang bisa berupa string atau undefined
+  let locale: string | undefined = await requestLocale;
+
+  // Pastikan locale valid dan termasuk dalam routing.locales
+  if (locale && routing.locales.includes(locale as Locale)) {
+    // locale sudah valid, tidak perlu perubahan
+  } else {
+    // Jika locale tidak valid atau undefined, setel nilai default
     locale = routing.defaultLocale;
   }
 
