@@ -5,13 +5,9 @@ import React from "react";
 import globeImage from "../../public/assets/images/globe-image.png";
 import vectorLocationGarage from "../../public/assets/images/vector-location-garage.svg";
 import CountryList from "@/components/CountryList";
+import { useTranslations } from "next-intl";
 
-export interface Country {
-  country: string;
-  cities: string[];
-}
-
-export const countriesData: Country[] = [
+const countriesData = [
   {
     country: "Turkey",
     cities: ["Ankara", "Antalya", "Mugla"],
@@ -112,19 +108,21 @@ export const countriesData: Country[] = [
 ];
 
 export default function GarageLocation() {
+  const t = useTranslations("GarageLocation");
+
   return (
     <section>
       <div className="relative">
         <Image
           src={vectorLocationGarage}
-          alt="w-full Vector location garage"
+          alt="Vector location garage"
           className="absolute -z-10 left-0 w-full top-52 md:top-72 xl:top-40 2xl:top-0"
         />
 
         <DashedBorderContainer>
           <div>
             <div className="flex justify-center">
-              <Tag>Lokasi garasi beam</Tag>
+              <Tag>{t("tag")}</Tag>
             </div>
             <div className="w-full flex justify-center mt-6">
               <Image

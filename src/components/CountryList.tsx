@@ -1,9 +1,13 @@
-import { Country } from "@/sections/GarageLocation";
 import CityGrid from "./CityGrid";
 
-interface CountryListProps {
+type Country = {
+  country: string;
+  cities: string[];
+};
+
+type CountryListProps = {
   countries: Country[];
-}
+};
 
 const CountryList = ({ countries }: CountryListProps) => {
   return (

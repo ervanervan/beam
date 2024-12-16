@@ -111,6 +111,109 @@
     }
   },
 
+  "GarageLocation": {
+    "tag": "Beam garage location",
+    "countriesData": [
+      {
+        "country": "Turkey",
+        "cities": ["Ankara", "Antalya", "Mugla"]
+      },
+      {
+        "country": "Indonesia",
+        "cities": [
+          "Bali",
+          "Bekasi",
+          "Bogor",
+          "Cikarang",
+          "Depok",
+          "Tanggerang",
+          "Tanggerang Selatan"
+        ]
+      },
+      {
+        "country": "Malaysia",
+        "cities": [
+          "Johor",
+          "Kedah",
+          "Kuala Lumpur",
+          "Kuala Trengganu",
+          "Kuantan",
+          "Selangor",
+          "Melaka",
+          "Negeri Sembilan",
+          "Perak",
+          "Pahang",
+          "Penang",
+          "Sabah",
+          "Sarawak"
+        ]
+      },
+      {
+        "country": "South Korea",
+        "cities": [
+          "Ansan",
+          "Asan",
+          "Buc-Bupyeong",
+          "Busan",
+          "Changwon",
+          "Cheonan",
+          "Cheongju",
+          "Chuncheon",
+          "Daegu",
+          "Daejeon",
+          "Incheon",
+          "Seoul"
+        ]
+      },
+      {
+        "country": "Japan",
+        "cities": ["Naha", "Osaka", "Minami Uonuma"]
+      },
+      {
+        "country": "Thailand",
+        "cities": [
+          "Bangkok",
+          "Chiangmai",
+          "Chonburi",
+          "Pathum Thani",
+          "Depok",
+          "Phuket"
+        ]
+      },
+      {
+        "country": "Australia",
+        "cities": [
+          "Adelaide",
+          "Albury",
+          "Bendigo",
+          "Broome",
+          "Burnburry",
+          "Cairns",
+          "Darwin",
+          "Esperance",
+          "Foster-Tuncurry",
+          "Geraldton",
+          "Harvey Bay",
+          "Hobart",
+          "Ipswich",
+          "Kogarah",
+          "Launceston"
+        ]
+      },
+      {
+        "country": "New Zealand",
+        "cities": [
+          "Napier",
+          "Porirua",
+          "Queenstown",
+          "Taupō",
+          "Tauranga",
+          "Whangārei"
+        ]
+      }
+    ]
+  },
+
   "Footer": {
     "BeamMobility": "Beam Mobility",
     "Copyright": "Copyright 2024 ©",
