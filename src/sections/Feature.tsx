@@ -12,11 +12,11 @@ import ArrowLeftBlackIcon from "../../public/assets/icons/ArrowLeftBlackIcon";
 import { ArrowRightLongIcon } from "../../public/assets/icons/ArrowRightLongIcon";
 import { useTranslations } from "next-intl";
 
-// type FeatureProps = {
-//   tag: string;
-//   title: string;
-//   description: string;
-// };
+type FeatureProps = {
+  tag: string;
+  title: string;
+  description: string;
+};
 
 const images = [
   { src: imageFeature1, alt: "Feature image 1" },
