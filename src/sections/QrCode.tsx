@@ -1,8 +1,8 @@
 import DashedBorderContainer from "@/components/DashedBorderContainer";
 import Image from "next/image";
 import React from "react";
-import qrCodeAndroid from "@/assets/images/qr-code-android.svg";
-import qrCodeIos from "@/assets/images/qr-code-ios.svg";
+import qrCodeAndroid from "../../public/assets/images/qr-code-android.svg";
+import qrCodeIos from "../../public/assets/images/qr-code-ios.svg";
 import AndroidIcon from "../../public/assets/icons/AndroidIcon";
 import IosIcon from "../../public/assets/icons/IosIcon";
 
