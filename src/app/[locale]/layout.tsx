@@ -12,24 +12,24 @@ export const metadata: Metadata = {
   description: "Beam - Modern Design Website Landing Page",
 };
 
+type Locale = "en" | "fr" | "id"; // Sesuaikan dengan routing.locales
+
 interface RootLayoutProps {
   children: React.ReactNode;
-  params: { locale: string };
+  params: { locale: Locale }; // Tipe params.locale lebih spesifik
 }
 
 export default async function RootLayout({
   children,
   params,
 }: RootLayoutProps) {
-  // Await params to ensure they're available
-  const { locale } = await params;
+  const { locale } = params;
 
-  // Ensure that the incoming `locale` is valid
-  if (!routing.locales.includes(locale as any)) {
+  // Pastikan locale ada dalam routing.locales
+  if (!routing.locales.includes(locale)) {
     notFound();
   }
 
-  // Providing all messages to the client
   const messages = await getMessages();
 
   return (
