@@ -41,6 +41,7 @@ export default function Partner() {
         tag="Program kerjasama"
         title="#BeamBooster"
         description="Membantu bisnis-bisnis setempat terhubung dengan pelanggan Beam untuk meningkatkan jumlah kunjungan, eksposur, dan pendapatan."
+        button="Pelajari selengkapnya"
       />
       <Testimonial />
       <Help

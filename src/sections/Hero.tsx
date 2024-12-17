@@ -1,5 +1,3 @@
-import { useTranslations } from "next-intl";
-
 type HeroProps = {
   title: string;
   description: string;

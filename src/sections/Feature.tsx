@@ -10,7 +10,6 @@ import { useState } from "react";
 import ArrowRightBlackIcon from "../../public/assets/icons/ArrowRightBlackIcon";
 import ArrowLeftBlackIcon from "../../public/assets/icons/ArrowLeftBlackIcon";
 import { ArrowRightLongIcon } from "../../public/assets/icons/ArrowRightLongIcon";
-import { useTranslations } from "next-intl";
 
 type FeatureProps = {
   tag: string;
