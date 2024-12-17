@@ -247,5 +247,18 @@
       "PrioritasKami": "Nos priorités",
       "Berita": "Actualités"
     }
+  },
+
+  "CityPage": {
+    "Hero": {
+      "title": "Ville",
+      "description": "Beam est un leader mondial de la micromobilité, opérant des vélos électriques, des trottinettes électriques et des cyclomoteurs dans plus de 60 villes en Asie-Pacifique.",
+      "downloadButton": "Télécharger l'application"
+    },
+    "Help": {
+      "title": "Vous voulez Beam dans votre ville?",
+      "description": "Êtes-vous un responsable local ou municipal qui souhaite en savoir plus sur la mise en œuvre des systèmes de micromobilité partagée dans votre ville?",
+      "bringBeamButton": "Apportez Beam dans votre ville"
+    }
   }
 }

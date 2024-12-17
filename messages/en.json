@@ -247,5 +247,18 @@
       "PrioritasKami": "Our priorities",
       "Berita": "News"
     }
+  },
+
+  "CityPage": {
+    "Hero": {
+      "title": "City",
+      "description": "Beam is a global leader in micromobility, operating electric bikes, scooters, and mopeds in over 60 cities across Asia Pacific.",
+      "downloadButton": "Download App"
+    },
+    "Help": {
+      "title": "Want Beam in your city?",
+      "description": "Are you a local or city government official who wants to learn more about how shared micromobility systems can be implemented in your city?",
+      "bringBeamButton": "Bring Beam to Your City"
+    }
   }
 }

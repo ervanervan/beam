@@ -6,17 +6,18 @@ import GarageLocation from "@/sections/GarageLocation";
 import Help from "@/sections/Help";
 import Hero from "@/sections/Hero";
 import VehicleSafety from "@/sections/VehicleSafety";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import React from "react";
 
 export default function City() {
+  const tHero = useTranslations("CityPage.Hero");
+  const tHelp = useTranslations("CityPage.Help");
   return (
     <>
       <Hero
-        title="Kota"
-        description="Beam adalah pemimpin global dalam mikromobilitas, 
-        yang mengoperasikan sepeda listrik, skuter listrik, 
-        dan motor sepeda di lebih dari 60 kota di Asia Pasifik."
+        title={tHero("title")}
+        description={tHero("description")}
         backgroundClass="bg-hero-city-pattern"
       >
         <div className="flex flex-col md:flex-row gap-3 mt-11">
@@ -26,7 +27,7 @@ export default function City() {
               icon={<ArrowRightLongIcon />}
               iconPosition="right"
             >
-              Unduh Aplikasi
+              {tHero("downloadButton")}
             </Button>
           </Link>
         </div>
@@ -39,16 +40,16 @@ export default function City() {
       <GarageLocation />
       <VehicleSafety />
       <Help
-        title="Ingin Beam di kota Anda?"
-        description="Apakah Anda seorang pejabat pemerintah daerah atau kota yang ingin mengetahui lebih lanjut tentang bagaimana sistem operasi mikromobilitas bersama dapat diterapkan di kota Anda?"
-        backgroundClass="bg-partner-pattern"
+        title={tHelp("title")}
+        description={tHelp("description")}
+        backgroundClass="bg-city-pattern"
       >
         <Button
           variant="primary"
           icon={<ArrowRightLongIcon />}
           iconPosition="right"
         >
-          Ayo Bawa Beam ke Kota Anda
+          {tHelp("bringBeamButton")}
         </Button>
       </Help>
     </>
