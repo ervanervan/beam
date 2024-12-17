@@ -214,6 +214,20 @@
     ]
   },
 
+  "VehicleSafety": {
+    "tag": "Keamanan kendaraan",
+    "title1": "Keselamatan",
+    "desc1": "Bagi kami, keselamatan bukan hanya soal kendaraan, tetapi juga soal pengendara, pejalan kaki, dan komunitas yang dilalui. Teknologi kami memastikan keamanan maksimum untuk semua.",
+    "title2": "Jejak karbon",
+    "desc2": "Di Asia Pasifik, Beam adalah satu-satunya operator mobilitas listrik yang bersertifikasi Climate Neutral. Kami terus berupaya untuk mengurangi jejak karbon demi masa depan yang lebih hijau.",
+    "title3": "Meningkatkan bisnis lokal",
+    "desc3": "Platform #BeamBooster kami memanfaatkan perpaduan teknologi dan lokasi untuk menghubungkan pengguna dengan bisnis lokal, membantu meningkatkan pendapatan mereka.",
+    "title4": "Peluang kerja",
+    "desc4": "Program Beam Marshals kami menciptakan peluang kerja di komunitas lokal, memberikan pendapatan tambahan, dan mendukung ekonomi daerah.",
+    "title5": "Data untuk perencanaan kota",
+    "desc5": "Kami percaya bahwa data adalah kunci untuk perencanaan kota yang lebih baik. Data kami membantu pemerintah merencanakan infrastruktur yang lebih efisien."
+  },
+
   "Footer": {
     "BeamMobility": "Beam Mobility",
     "Copyright": "Hak Cipta 2024 ©",

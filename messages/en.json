@@ -214,6 +214,20 @@
     ]
   },
 
+  "VehicleSafety": {
+    "tag": "Vehicle safety",
+    "title1": "Safety",
+    "desc1": "For us, safety is not just about vehicles but also about riders, pedestrians, and the communities we pass through. Our technology ensures maximum safety for everyone.",
+    "title2": "Carbon footprint",
+    "desc2": "In Asia Pacific, Beam is the only Climate Neutral Certified electric mobility operator. We continuously work to reduce our carbon footprint for a greener future.",
+    "title3": "Boosting local businesses",
+    "desc3": "Our #BeamBooster platform leverages technology and location data to connect users with local businesses, helping to increase their revenue.",
+    "title4": "Job opportunities",
+    "desc4": "Our Beam Marshals program creates job opportunities in local communities, providing additional income and supporting the regional economy.",
+    "title5": "Data for urban planning",
+    "desc5": "We believe that data is key to better city planning. Our data helps governments design more efficient infrastructure."
+  },
+
   "Footer": {
     "BeamMobility": "Beam Mobility",
     "Copyright": "Copyright 2024 ©",

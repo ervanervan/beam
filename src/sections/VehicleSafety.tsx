@@ -6,52 +6,55 @@ import vehicleSafetyImage2 from "../../public/assets/images/vehicle-safety-card-
 import vehicleSafetyImage3 from "../../public/assets/images/vehicle-safety-card-image3.png";
 import vehicleSafetyImage4 from "../../public/assets/images/vehicle-safety-card-image4.png";
 import vehicleSafetyImage5 from "../../public/assets/images/vehicle-safety-card-image5.png";
+import { useTranslations } from "next-intl";
 
 export default function VehicleSafety() {
+  const t = useTranslations("VehicleSafety");
+  console.log(t);
   return (
     <section>
       <DashedBorderContainer showTop={false}>
         <div className="flex flex-col items-center gap-24">
           <VehicleSafetyCard
-            tag="Keamanan kendaraan"
-            title="Keselamatan"
-            description="Bagi kami, keselamatan bukan hanya soal kendaraan yang berfungsi baik dan memenuhi standar pemerintah. Dengan perpaduan perangkat keras, perangkat lunak, dan edukasi, kami menghadirkan kendaraan mikromobilitas Beam yang paling aman — jaminan yang tak bisa diberikan oleh kendaraan pribadi."
+            tag={t("tag")}
+            title={t("title1")}
+            description={t("desc1")}
             imageSrc={vehicleSafetyImage1}
             imageAlt="Vehicle safety image 1"
             textPosition="left"
             imagePosition="right"
           />
           <VehicleSafetyCard
-            tag="Keamanan kendaraan"
-            title="Jejak karbon"
-            description="Di Asia Pasifik, Beam adalah satu-satunya operator mobilitas listrik yang Bersertifikat Netral Iklim. Semua perjalanan dengan Beam tidak hanya 100% bertenaga listrik, tetapi juga telah disetujui memiliki berstatus netral karbon menyeluruh."
+            tag={t("tag")}
+            title={t("title2")}
+            description={t("desc2")}
             imageSrc={vehicleSafetyImage2}
             imageAlt="Vehicle safety image 2"
             textPosition="right"
             imagePosition="left"
           />
           <VehicleSafetyCard
-            tag="Keamanan kendaraan"
-            title="Meningkatkan bisnis lokal"
-            description="Platform #BeamBooster kami memanfaatkan perpaduan teknologi GPS, notifikasi dalam aplikasi, dan insentif mitra untuk menstimulasi aktivitas ekonomi di masyarakat setempat Anda. Lebih baik lagi, pendaftarannya gratis untuk bisnis."
+            tag={t("tag")}
+            title={t("title3")}
+            description={t("desc3")}
             imageSrc={vehicleSafetyImage3}
             imageAlt="Vehicle safety image 3"
             textPosition="left"
             imagePosition="right"
           />
           <VehicleSafetyCard
-            tag="Keamanan kendaraan"
-            title="Peluang kerja"
-            description="Program Beam Marshals kami menciptakan peluang kerja di bidang ekonomi. Mereka bertugas memelihara skuter, mengganti baterai, serta menyebarkan dan mengumpulkan skuter, memastikan pengendara dapat berkendara dengan aman dan nyaman kapan saja, di mana saja."
+            tag={t("tag")}
+            title={t("title4")}
+            description={t("desc4")}
             imageSrc={vehicleSafetyImage4}
             imageAlt="Vehicle safety image 4"
             textPosition="right"
             imagePosition="left"
           />
           <VehicleSafetyCard
-            tag="Keamanan kendaraan"
-            title="Data untuk perencanaan kota"
-            description="Kami percaya data penting untuk memaksimalkan dampak positif di kota-kota mitra kami. Beam melacak dan menganalisis ribuan metrik untuk meningkatkan keamanan, memahami permintaan mikromobilitas, serta mendukung perencanaan kota dan pengembangan infrastruktur masa depan."
+            tag={t("tag")}
+            title={t("title5")}
+            description={t("desc5")}
             imageSrc={vehicleSafetyImage5}
             imageAlt="Vehicle safety image 5"
             textPosition="left"

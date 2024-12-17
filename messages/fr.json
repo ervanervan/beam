@@ -214,6 +214,20 @@
     ]
   },
 
+  "VehicleSafety": {
+    "tag": "Sécurité des véhicules",
+    "title1": "Sécurité",
+    "desc1": "Pour nous, la sécurité ne concerne pas seulement les véhicules, mais aussi les conducteurs, les piétons et les communautés que nous traversons. Notre technologie garantit une sécurité maximale pour tous.",
+    "title2": "Empreinte carbone",
+    "desc2": "En Asie-Pacifique, Beam est le seul opérateur de mobilité électrique certifié neutre en carbone. Nous travaillons continuellement pour réduire notre empreinte carbone pour un avenir plus vert.",
+    "title3": "Stimuler les entreprises locales",
+    "desc3": "Notre plateforme #BeamBooster utilise la technologie et les données de localisation pour connecter les utilisateurs aux entreprises locales, aidant ainsi à augmenter leurs revenus.",
+    "title4": "Opportunités d'emploi",
+    "desc4": "Notre programme Beam Marshals crée des opportunités d'emploi dans les communautés locales, offrant des revenus supplémentaires et soutenant l'économie régionale.",
+    "title5": "Données pour la planification urbaine",
+    "desc5": "Nous croyons que les données sont essentielles pour une meilleure planification des villes. Nos données aident les gouvernements à concevoir des infrastructures plus efficaces."
+  },
+
   "Footer": {
     "BeamMobility": "Beam Mobility",
     "Copyright": "Droit d'auteur 2024 ©",
