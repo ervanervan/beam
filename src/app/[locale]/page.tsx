@@ -16,19 +16,20 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 export default function Home() {
-  const t = useTranslations("HeroHome.buttons");
-  const tr = useTranslations("HelpHome.buttons");
+  const tHero = useTranslations("HomePage.Hero");
+  const tFeature = useTranslations("HomePage.Feature");
+  const tHelp = useTranslations("HomePage.Help");
   return (
     <>
       <Hero
-        title="Gerak bebas dengan Beam"
-        description="Ubah masa depan mulai dari dirimu dengan menggunakan beam sekarang."
+        title={tHero("title")}
+        description={tHero("description")}
         backgroundClass="bg-hero-pattern"
       >
         <>
           <div className="flex flex-col md:flex-row gap-3 mt-11">
             <Button variant="secondary" icon={<MapPinIcon />}>
-              {t("viewGarage")}
+              {tHero("buttons.viewGarage")}
             </Button>
             <Link href={"/download"}>
               <Button
@@ -36,7 +37,7 @@ export default function Home() {
                 icon={<ArrowRightLongIcon />}
                 iconPosition="right"
               >
-                {t("downloadApp")}
+                {tHero("buttons.downloadApp")}
               </Button>
             </Link>
           </div>
@@ -52,20 +53,16 @@ export default function Home() {
       <Priority />
       <Vehicle />
       <Feature
-        tag="Fitur kami"
-        title="Perjalanan grup"
-        description="Nikmati perjalanan seru bersama teman dan keluarga 
-        dengan fitur Perjalanan Grup, di mana Anda dapat berkendara 
-        bersama menggunakan satu akun. Fitur ini tersedia 
-        di beberapa kota tertentu."
+        tag={tFeature("tag")}
+        title={tFeature("title")}
+        description={tFeature("description")}
+        button={tFeature("button")}
       />
       <News />
       <Partnership />
       <Help
-        title="Masih ada pertanyaan?"
-        description="Jika ingin tahu lebih lanjut tentang Beam atau tertarik bermitra bersama kami, 
-        kami dengan senang hati membantu Anda. Hubungi kami sekarang 
-        dan mari ciptakan sesuatu yang hebat bersama."
+        title={tHelp("title")}
+        description={tHelp("description")}
         backgroundClass="bg-help-pattern"
       >
         <Button
@@ -73,7 +70,7 @@ export default function Home() {
           icon={<PhoneWhiteIcon />}
           iconPosition="right"
         >
-          {tr("contact")}
+          {tHelp("contact")}
         </Button>
       </Help>
     </>

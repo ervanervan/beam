@@ -16,6 +16,7 @@ type FeatureProps = {
   tag: string;
   title: string;
   description: string;
+  button: string;
 };
 
 const images = [
@@ -24,7 +25,12 @@ const images = [
   { src: imageFeature3, alt: "Feature image 3" },
 ];
 
-export default function Feature({ tag, title, description }: FeatureProps) {
+export default function Feature({
+  tag,
+  title,
+  description,
+  button,
+}: FeatureProps) {
   // State untuk menyimpan indeks gambar yang sedang ditampilkan
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
@@ -39,19 +45,18 @@ export default function Feature({ tag, title, description }: FeatureProps) {
       (prevIndex) => (prevIndex - 1 + images.length) % images.length
     );
   };
-  const t = useTranslations("FeatureHome");
 
   return (
     <section>
       <DashedBorderContainer showTop={false}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-10 items-center">
           <div className="flex flex-col">
-            <Tag>{t("tag")}</Tag>
+            <Tag>{tag}</Tag>
             <h3 className="mt-8 text-text-blackPrimary text-h3 font-medium">
-              {t("title")}
+              {title}
             </h3>
             <p className="mt-3 text-text-blackSecondary text-body1">
-              {t("description")}
+              {description}
             </p>
             <div className="mt-6">
               <Button
@@ -59,7 +64,7 @@ export default function Feature({ tag, title, description }: FeatureProps) {
                 icon={<ArrowRightLongIcon />}
                 iconPosition="right"
               >
-                {t("button")}
+                {button}
               </Button>
             </div>
           </div>

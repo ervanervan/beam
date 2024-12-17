@@ -7,8 +7,12 @@ type HeroProps = {
   children: React.ReactNode;
 };
 
-export default function Hero({ backgroundClass, children }: HeroProps) {
-  const t = useTranslations("HeroHome");
+export default function Hero({
+  title,
+  description,
+  backgroundClass,
+  children,
+}: HeroProps) {
   return (
     <section className="xl:px-7 xl:pt-7">
       <div
@@ -16,10 +20,10 @@ export default function Hero({ backgroundClass, children }: HeroProps) {
       >
         <div className="flex flex-col items-start justify-center h-full mx-auto">
           <h1 className="text-text-whitePrimary text-6xl md:text-title font-semibold mt-32 w-full md:w-[519px]">
-            {t("title")}
+            {title}
           </h1>
           <p className="mt-3 text-body1 text-text-whiteSecondary w-full md:w-[519px]">
-            {t("description")}
+            {description}
           </p>
           <div className="flex items-end justify-between w-full">
             {children}

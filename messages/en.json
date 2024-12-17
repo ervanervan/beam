@@ -8,12 +8,25 @@
     "contact": "Contact Us"
   },
 
-  "HeroHome": {
-    "title": "Move freely with Beam",
-    "description": "Change the future starting with yourself by using Beam now.",
-    "buttons": {
-      "viewGarage": "View Beam Garage",
-      "downloadApp": "Download App"
+  "HomePage": {
+    "Hero": {
+      "title": "Move freely with Beam",
+      "description": "Change the future starting with yourself by using Beam now.",
+      "buttons": {
+        "viewGarage": "View Beam Garage",
+        "downloadApp": "Download App"
+      }
+    },
+    "Feature": {
+      "tag": "Our Features",
+      "title": "Group Travel",
+      "description": "Enjoy exciting trips with friends and family using the Group Travel feature, where you can ride together using a single account. This feature is available in select cities.",
+      "button": "Learn more"
+    },
+    "Help": {
+      "title": "Still have questions?",
+      "description": "If you want to learn more about Beam or are interested in partnering with us, we are happy to assist you. Contact us now and let's create something great together.",
+      "contact": "Contact us"
     }
   },
 
@@ -40,13 +53,6 @@
     "tag": "Vehicles",
     "title": "Vehicles",
     "description": "Our electric scooters and bikes, designed for sharing, provide a comfortable and reliable riding experience tailored to your daily needs."
-  },
-
-  "FeatureHome": {
-    "tag": "Our Features",
-    "title": "Group Travel",
-    "description": "Enjoy exciting trips with friends and family using the Group Travel feature, where you can ride together using a single account. This feature is available in select cities.",
-    "button": "Learn more"
   },
 
   "News": {
@@ -100,14 +106,6 @@
     "buttons": {
       "prev": "Previous",
       "next": "Next"
-    }
-  },
-
-  "HelpHome": {
-    "title": "Still have questions?",
-    "description": "If you want to learn more about Beam or are interested in partnering with us, we are happy to assist you. Contact us now and let's create something great together.",
-    "buttons": {
-      "contact": "Contact us"
     }
   },
 

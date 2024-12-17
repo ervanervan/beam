@@ -8,12 +8,25 @@
     "contact": "Hubungi Kami"
   },
 
-  "HeroHome": {
-    "title": "Gerak bebas dengan Beam",
-    "description": "Ubah masa depan mulai dari dirimu dengan menggunakan Beam sekarang.",
-    "buttons": {
-      "viewGarage": "Lihat Garasi Beam",
-      "downloadApp": "Unduh Aplikasi"
+  "HomePage": {
+    "Hero": {
+      "title": "Gerak bebas dengan Beam",
+      "description": "Ubah masa depan mulai dari dirimu dengan menggunakan Beam sekarang.",
+      "buttons": {
+        "viewGarage": "Lihat Garasi Beam",
+        "downloadApp": "Unduh Aplikasi"
+      }
+    },
+    "Feature": {
+      "tag": "Fitur kami",
+      "title": "Perjalanan grup",
+      "description": "Nikmati perjalanan seru bersama teman dan keluarga dengan fitur Perjalanan Grup, di mana Anda dapat berkendara bersama menggunakan satu akun. Fitur ini tersedia di beberapa kota tertentu.",
+      "button": "Pelajari selengkapnya"
+    },
+    "Help": {
+      "title": "Masih ada pertanyaan?",
+      "description": "Jika ingin tahu lebih lanjut tentang Beam atau tertarik bermitra bersama kami, kami dengan senang hati membantu Anda. Hubungi kami sekarang dan mari ciptakan sesuatu yang hebat bersama.",
+      "button": "Hubungi kami"
     }
   },
 
@@ -40,13 +53,6 @@
     "tag": "Kendaraan",
     "title": "Kendaraan",
     "description": "Skuter dan sepeda listrik kami, dirancang untuk berbagi, memberikan pengalaman berkendara yang nyaman dan andal, sesuai dengan kebutuhan sehari-hari."
-  },
-
-  "FeatureHome": {
-    "tag": "Fitur kami",
-    "title": "Perjalanan grup",
-    "description": "Nikmati perjalanan seru bersama teman dan keluarga dengan fitur Perjalanan Grup, di mana Anda dapat berkendara bersama menggunakan satu akun. Fitur ini tersedia di beberapa kota tertentu.",
-    "button": "Pelajari selengkapnya"
   },
 
   "News": {
@@ -100,14 +106,6 @@
     "buttons": {
       "prev": "Sebelumnya",
       "next": "Berikutnya"
-    }
-  },
-
-  "HelpHome": {
-    "title": "Masih ada pertanyaan?",
-    "description": "Jika ingin tahu lebih lanjut tentang Beam atau tertarik bermitra bersama kami, kami dengan senang hati membantu Anda. Hubungi kami sekarang dan mari ciptakan sesuatu yang hebat bersama.",
-    "buttons": {
-      "contact": "Hubungi kami"
     }
   },
 

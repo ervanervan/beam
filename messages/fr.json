@@ -8,12 +8,25 @@
     "contact": "Contactez-nous"
   },
 
-  "HeroHome": {
-    "title": "Muévete libremente con Beam",
-    "description": "Cambia el futuro comenzando contigo mismo usando Beam ahora.",
-    "buttons": {
-      "viewGarage": "Ver Garaje Beam",
-      "downloadApp": "Descargar Aplicación"
+  "HomePage": {
+    "Hero": {
+      "title": "Muévete libremente con Beam",
+      "description": "Cambia el futuro comenzando contigo mismo usando Beam ahora.",
+      "buttons": {
+        "viewGarage": "Ver Garaje Beam",
+        "downloadApp": "Descargar Aplicación"
+      }
+    },
+    "Feature": {
+      "tag": "Nos Fonctionnalités",
+      "title": "Voyage en groupe",
+      "description": "Profitez de voyages passionnants avec vos amis et votre famille grâce à la fonctionnalité Voyage en groupe, où vous pouvez voyager ensemble avec un seul compte. Cette fonctionnalité est disponible dans certaines villes.",
+      "button": "En savoir plus"
+    },
+    "Help": {
+      "title": "Vous avez encore des questions ?",
+      "description": "Si vous souhaitez en savoir plus sur Beam ou êtes intéressé à collaborer avec nous, nous serons heureux de vous aider. Contactez-nous dès maintenant et créons ensemble quelque chose de génial.",
+      "contact": "Contactez-nous"
     }
   },
 
@@ -40,13 +53,6 @@
     "tag": "Vehículos",
     "title": "Vehículos",
     "description": "Nuestros scooters y bicicletas eléctricas, diseñados para compartir, brindan una experiencia de conducción cómoda y confiable adaptada a sus necesidades diarias."
-  },
-
-  "FeatureHome": {
-    "tag": "Nos Fonctionnalités",
-    "title": "Voyage en groupe",
-    "description": "Profitez de voyages passionnants avec vos amis et votre famille grâce à la fonctionnalité Voyage en groupe, où vous pouvez voyager ensemble avec un seul compte. Cette fonctionnalité est disponible dans certaines villes.",
-    "button": "En savoir plus"
   },
 
   "News": {
@@ -100,14 +106,6 @@
     "buttons": {
       "prev": "Anterior",
       "next": "Siguiente"
-    }
-  },
-
-  "HelpHome": {
-    "title": "Vous avez encore des questions ?",
-    "description": "Si vous souhaitez en savoir plus sur Beam ou êtes intéressé à collaborer avec nous, nous serons heureux de vous aider. Contactez-nous dès maintenant et créons ensemble quelque chose de génial.",
-    "buttons": {
-      "contact": "Contactez-nous"
     }
   },
 
