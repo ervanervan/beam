@@ -24,7 +24,7 @@ const images = [
   { src: imageFeature3, alt: "Feature image 3" },
 ];
 
-export default function Feature() {
+export default function Feature({ tag, title, description }: FeatureProps) {
   // State untuk menyimpan indeks gambar yang sedang ditampilkan
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
