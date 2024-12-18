@@ -111,7 +111,7 @@
 
   "GarageLocation": {
     "tag": "Beam garage location",
-    "countriesData": [
+    "countries": [
       {
         "country": "Turkey",
         "cities": ["Ankara", "Antalya", "Mugla"]

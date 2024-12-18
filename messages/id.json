@@ -111,7 +111,7 @@
 
   "GarageLocation": {
     "tag": "Lokasi garasi beam",
-    "countriesData": [
+    "countries": [
       {
         "country": "Turki",
         "cities": ["Ankara", "Antalya", "Mugla"]
