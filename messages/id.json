@@ -292,5 +292,26 @@
       "brandingAndAdvertising": "Merek dan iklan",
       "higherEducationPartnership": "Kerjasama dengan pendidikan tinggi"
     }
+  },
+
+  "Testimonial": {
+    "tag": "Testimonial dari mitra",
+    "quotes": [
+      {
+        "quote": "#BeamBooster adalah inisiatif cerdas yang menggunakan skuter listrik Beam untuk mendatangkan lebih banyak orang di pintu kami. Kami sangat senang bisa terlibat.",
+        "author": "Helen Rutherford",
+        "position": "Komisaris"
+      },
+      {
+        "quote": "Program ini membantu meningkatkan pengunjung harian di toko kami. Skuter Beam sangat menarik perhatian, dan kami melihat dampak positifnya.",
+        "author": "Jane Smith",
+        "position": "Manajer Toko ABC"
+      },
+      {
+        "quote": "Kami sangat terkesan dengan dampak langsung dari #BeamBooster. Ini inovasi brilian yang mendukung bisnis lokal seperti kami.",
+        "author": "Michael Brown",
+        "position": "CEO Restoran DEF"
+      }
+    ]
   }
 }

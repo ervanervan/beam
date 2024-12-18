@@ -292,5 +292,26 @@
       "brandingAndAdvertising": "Branding and Advertising",
       "higherEducationPartnership": "Partnership with Higher Education"
     }
+  },
+
+  "Testimonial": {
+    "tag": "Testimonial from partners",
+    "quotes": [
+      {
+        "quote": "#BeamBooster is a smart initiative using Beam electric scooters to bring more people to our doors. We are thrilled to be involved.",
+        "author": "Helen Rutherford",
+        "position": "Commissioner"
+      },
+      {
+        "quote": "This program has helped increase daily visitors to our store. The Beam scooters are eye-catching, and we’ve seen a positive impact.",
+        "author": "Jane Smith",
+        "position": "Manager of ABC Store"
+      },
+      {
+        "quote": "We were highly impressed with the direct impact of #BeamBooster. This is a brilliant innovation supporting local businesses like ours.",
+        "author": "Michael Brown",
+        "position": "CEO of DEF Restaurant"
+      }
+    ]
   }
 }

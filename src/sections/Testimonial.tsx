@@ -12,6 +12,7 @@ import userTertimonial3 from "../../public/assets/images/user-testimonial3.svg";
 import partnerLogo1 from "../../public/assets/images/tertimonial-logo1.svg";
 import partnerLogo2 from "../../public/assets/images/tertimonial-logo2.svg";
 import partnerLogo3 from "../../public/assets/images/tertimonial-logo3.svg";
+import { useTranslations } from "next-intl";
 
 const testimonial = [
   {
@@ -41,6 +42,7 @@ const testimonial = [
 ];
 
 export default function Testimonial() {
+  const t = useTranslations("Testimonial");
   // State untuk menyimpan indeks gambar yang sedang ditampilkan
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
@@ -67,7 +69,7 @@ export default function Testimonial() {
       <DashedBorderContainer showTop={false}>
         <div>
           <div>
-            <Tag>Testimonial dari mitra</Tag>
+            <Tag>{t("tag")}</Tag>
           </div>
           <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 items-center gap-y-6">
             <div className="w-full lg:w-[46rem]">
@@ -75,7 +77,7 @@ export default function Testimonial() {
                 “
               </span>
               <p className="text-h4 text-text-blackPrimary font-medium -mt-6">
-                {testimonial[currentIndex].quote}
+                {t(`quotes.${currentIndex}.quote`)}
               </p>
             </div>
 
@@ -97,10 +99,10 @@ export default function Testimonial() {
                   </div>
                   <div className="flex flex-col">
                     <h4 className="text-body3 text-text-blackPrimary ">
-                      {testimonial[currentIndex].author}
+                      {t(`quotes.${currentIndex}.author`)}
                     </h4>
                     <span className="text-body4 text-text-blackSecondary">
-                      {testimonial[currentIndex].position}
+                      {t(`quotes.${currentIndex}.position`)}
                     </span>
                   </div>
                 </div>

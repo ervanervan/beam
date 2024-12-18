@@ -292,5 +292,26 @@
       "brandingAndAdvertising": "Marque et publicité",
       "higherEducationPartnership": "Partenariat avec l'enseignement supérieur"
     }
+  },
+
+  "Testimonial": {
+    "tag": "Témoignages des partenaires",
+    "quotes": [
+      {
+        "quote": "#BeamBooster est une initiative intelligente utilisant des trottinettes électriques Beam pour attirer plus de monde à nos portes. Nous sommes ravis d'y participer.",
+        "author": "Helen Rutherford",
+        "position": "Commissaire"
+      },
+      {
+        "quote": "Ce programme a permis d'augmenter le nombre de visiteurs quotidiens dans notre magasin. Les trottinettes Beam attirent l'attention, et nous avons constaté un impact positif.",
+        "author": "Jane Smith",
+        "position": "Directrice du magasin ABC"
+      },
+      {
+        "quote": "Nous avons été très impressionnés par l'impact direct de #BeamBooster. C'est une innovation brillante soutenant les entreprises locales comme la nôtre.",
+        "author": "Michael Brown",
+        "position": "PDG du restaurant DEF"
+      }
+    ]
   }
 }
