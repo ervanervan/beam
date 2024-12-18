@@ -260,5 +260,26 @@
       "description": "Are you a local or city government official who wants to learn more about how shared micromobility systems can be implemented in your city?",
       "bringBeamButton": "Bring Beam to Your City"
     }
+  },
+
+  "PartnerPage": {
+    "hero": {
+      "title": "Partner",
+      "description": "If you care about a better future through sustainable transportation, let's talk. We want to hear your ideas and suggestions!"
+    },
+    "buttons": {
+      "downloadApp": "Download App",
+      "collaborateNow": "Collaborate Now"
+    },
+    "feature": {
+      "tag": "Partnership Program",
+      "title": "#BeamBooster",
+      "description": "Helping local businesses connect with Beam users to increase footfall, exposure, and revenue.",
+      "button": "Learn More"
+    },
+    "help": {
+      "title": "Let's collaborate!",
+      "description": "Partnering with us can mean many things—from simple collaborations to long-term strategic partnerships. We're open to discussions and finding the best solutions with you."
+    }
   }
 }

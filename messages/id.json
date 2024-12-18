@@ -260,5 +260,26 @@
       "description": "Apakah Anda seorang pejabat pemerintah daerah atau kota yang ingin mengetahui lebih lanjut tentang bagaimana sistem operasi mikromobilitas bersama dapat diterapkan di kota Anda?",
       "bringBeamButton": "Ayo Bawa Beam ke Kota Anda"
     }
+  },
+
+  "PartnerPage": {
+    "hero": {
+      "title": "Mitra",
+      "description": "Jika Anda peduli pada masa depan yang lebih baik melalui transportasi berkelanjutan, mari berbincang. Kami ingin mendengar ide dan masukan Anda!"
+    },
+    "buttons": {
+      "downloadApp": "Unduh Aplikasi",
+      "collaborateNow": "Kolaborasi Sekarang"
+    },
+    "feature": {
+      "tag": "Program kerjasama",
+      "title": "#BeamBooster",
+      "description": "Membantu bisnis-bisnis setempat terhubung dengan pelanggan Beam untuk meningkatkan jumlah kunjungan, eksposur, dan pendapatan.",
+      "button": "Pelajari selengkapnya"
+    },
+    "help": {
+      "title": "Ayo berkolaborasi!",
+      "description": "Bermitra dengan kami bisa berarti berbagai hal—mulai dari kerjasama sederhana hingga kolaborasi strategis jangka panjang. Kami terbuka untuk diskusi dan mencari solusi terbaik bersama Anda."
+    }
   }
 }

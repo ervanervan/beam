@@ -6,17 +6,17 @@ import Feature from "@/sections/Feature";
 import Help from "@/sections/Help";
 import Hero from "@/sections/Hero";
 import Testimonial from "@/sections/Testimonial";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import React from "react";
 
 export default function Partner() {
+  const t = useTranslations("PartnerPage");
   return (
     <>
       <Hero
-        title="Mitra"
-        description="Jika Anda peduli pada masa depan yang lebih baik 
-        melalui transportasi berkelanjutan, mari berbincang. 
-        Kami ingin mendengar ide dan masukan Anda!."
+        title={t("hero.title")}
+        description={t("hero.description")}
         backgroundClass="bg-hero-partner-pattern"
       >
         <div className="flex flex-col md:flex-row gap-3 mt-11">
@@ -26,7 +26,7 @@ export default function Partner() {
               icon={<ArrowRightLongIcon />}
               iconPosition="right"
             >
-              Unduh Aplikasi
+              {t("buttons.downloadApp")}
             </Button>
           </Link>
         </div>
@@ -38,15 +38,15 @@ export default function Partner() {
       </Hero>
       <Benefits />
       <Feature
-        tag="Program kerjasama"
-        title="#BeamBooster"
-        description="Membantu bisnis-bisnis setempat terhubung dengan pelanggan Beam untuk meningkatkan jumlah kunjungan, eksposur, dan pendapatan."
-        button="Pelajari selengkapnya"
+        tag={t("feature.tag")}
+        title={t("feature.title")}
+        description={t("feature.description")}
+        button={t("feature.button")}
       />
       <Testimonial />
       <Help
-        title="Ayo berkolaborasi!"
-        description="Bermitra dengan kami bisa berarti berbagai hal—mulai dari kerjasama sederhana hingga kolaborasi strategis jangka panjang. Kami terbuka untuk diskusi dan mencari solusi terbaik bersama Anda."
+        title={t("help.title")}
+        description={t("help.description")}
         backgroundClass="bg-partner-pattern"
       >
         <Button
@@ -54,7 +54,7 @@ export default function Partner() {
           icon={<ArrowRightLongIcon />}
           iconPosition="right"
         >
-          Kolaborasi Sekarang
+          {t("buttons.collaborateNow")}
         </Button>
       </Help>
     </>
