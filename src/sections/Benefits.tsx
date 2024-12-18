@@ -33,7 +33,7 @@ export default function Benefits() {
               <CheckCircleIcon />
             </div>
             <span className="text-h4 font-medium text-text-blackPrimary">
-              {t("businessSolutions")}
+              {t("items.businessSolutions")}
             </span>
           </div>
           <div className="flex items-center gap-2">
@@ -41,7 +41,7 @@ export default function Benefits() {
               <CheckCircleIcon />
             </div>
             <span className="text-h4 font-medium text-text-blackPrimary">
-              {t("brandingAndAdvertising")}
+              {t("items.brandingAndAdvertising")}
             </span>
           </div>
           <div className="flex items-center gap-2">
@@ -49,7 +49,7 @@ export default function Benefits() {
               <CheckCircleIcon />
             </div>
             <span className="text-h4 font-medium text-text-blackPrimary">
-              {t("higherEducationPartnership")}
+              {t("items.higherEducationPartnership")}
             </span>
           </div>
         </div>
