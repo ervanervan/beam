@@ -4,23 +4,23 @@ import Image from "next/image";
 import React from "react";
 import CheckCircleIcon from "../../public/assets/icons/CheckCircleIcon";
 import vectorBenefit from "../../public/assets/images/vector-benefit.svg";
+import { useTranslations } from "next-intl";
 
 export default function Benefits() {
+  const t = useTranslations("Benefit");
   return (
     <section>
       <DashedBorderContainer>
         <div className="text-center max-w-[37rem] mx-auto">
           <div>
-            <Tag>Benefit</Tag>
+            <Tag>{t("tag")}</Tag>
           </div>
           <div>
             <h3 className="mt-8 text-h3 text-text-blackPrimary font-medium">
-              Benefit kami
+              {t("title")}
             </h3>
             <p className="text-body1 text-text-blackSecondary mt-3">
-              Di Beam, kami berkomitmen penuh untuk bekerja sama dengan berbagai
-              jenis dan ukuran organisasi untuk membuat kehidupan kota berjalan
-              lebih baik bagi semua orang.
+              {t("description")}
             </p>
           </div>
         </div>
@@ -33,7 +33,7 @@ export default function Benefits() {
               <CheckCircleIcon />
             </div>
             <span className="text-h4 font-medium text-text-blackPrimary">
-              Solusi Usaha
+              {t("businessSolutions")}
             </span>
           </div>
           <div className="flex items-center gap-2">
@@ -41,7 +41,7 @@ export default function Benefits() {
               <CheckCircleIcon />
             </div>
             <span className="text-h4 font-medium text-text-blackPrimary">
-              Merek dan iklan
+              {t("brandingAndAdvertising")}
             </span>
           </div>
           <div className="flex items-center gap-2">
@@ -49,7 +49,7 @@ export default function Benefits() {
               <CheckCircleIcon />
             </div>
             <span className="text-h4 font-medium text-text-blackPrimary">
-              Kerjasama dengan pendidikan tinggi
+              {t("higherEducationPartnership")}
             </span>
           </div>
         </div>

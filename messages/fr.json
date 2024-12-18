@@ -281,5 +281,16 @@
       "title": "Collaborons!",
       "description": "Collaborer avec nous peut signifier de nombreuses choses – des collaborations simples à des partenariats stratégiques à long terme. Nous sommes ouverts aux discussions et à trouver les meilleures solutions avec vous."
     }
+  },
+
+  "Benefit": {
+    "tag": "Avantage",
+    "title": "Nos avantages",
+    "description": "Chez Beam, nous nous engageons pleinement à collaborer avec des organisations de tous types et tailles pour améliorer la vie urbaine pour tout le monde.",
+    "items": {
+      "businessSolutions": "Solutions commerciales",
+      "brandingAndAdvertising": "Marque et publicité",
+      "higherEducationPartnership": "Partenariat avec l'enseignement supérieur"
+    }
   }
 }

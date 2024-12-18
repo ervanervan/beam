@@ -281,5 +281,16 @@
       "title": "Ayo berkolaborasi!",
       "description": "Bermitra dengan kami bisa berarti berbagai hal—mulai dari kerjasama sederhana hingga kolaborasi strategis jangka panjang. Kami terbuka untuk diskusi dan mencari solusi terbaik bersama Anda."
     }
+  },
+
+  "Benefit": {
+    "tag": "Benefit",
+    "title": "Benefit kami",
+    "description": "Di Beam, kami berkomitmen penuh untuk bekerja sama dengan berbagai jenis dan ukuran organisasi untuk membuat kehidupan kota berjalan lebih baik bagi semua orang.",
+    "items": {
+      "businessSolutions": "Solusi Usaha",
+      "brandingAndAdvertising": "Merek dan iklan",
+      "higherEducationPartnership": "Kerjasama dengan pendidikan tinggi"
+    }
   }
 }

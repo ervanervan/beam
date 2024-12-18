@@ -281,5 +281,16 @@
       "title": "Let's collaborate!",
       "description": "Partnering with us can mean many things—from simple collaborations to long-term strategic partnerships. We're open to discussions and finding the best solutions with you."
     }
+  },
+
+  "Benefit": {
+    "tag": "Benefit",
+    "title": "Our Benefits",
+    "description": "At Beam, we are fully committed to collaborating with organizations of all types and sizes to make urban life better for everyone.",
+    "items": {
+      "businessSolutions": "Business Solutions",
+      "brandingAndAdvertising": "Branding and Advertising",
+      "higherEducationPartnership": "Partnership with Higher Education"
+    }
   }
 }
