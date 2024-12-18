@@ -14,10 +14,11 @@ Ervan Kurniawan – Web Developer, responsible for implementing the design and b
 
 ## Features
 
-- Fresh design: A clean, modern interface with consistent visuals,
-- Responsive layout: Fully optimized for desktops, tablets, and mobile devices,
-- Intuitive navigation: Easier for users to find what they need,
-- High performance: Optimized loading speed and resource efficiency.
+- **Fresh design**: A clean, modern interface with consistent visuals,
+- **Responsive layout**: Fully optimized for desktops, tablets, and mobile devices,
+- **Intuitive navigation**: Easier for users to find what they need,
+- **High performance**: Optimized loading speed and resource efficiency.
+- **Multilingual support**: Ability to translate content into three languages: Indonesian, English, and French.
 
 ## Technologies Used
 
