@@ -70,7 +70,7 @@ export default function Home() {
           icon={<PhoneWhiteIcon />}
           iconPosition="right"
         >
-          {tHelp("contact")}
+          {tHelp("button")}
         </Button>
       </Help>
     </>

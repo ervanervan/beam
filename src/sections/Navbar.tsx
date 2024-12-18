@@ -7,7 +7,7 @@ import ChangeLanguage from "@/components/ChangeLanguage";
 import { PhoneWhiteIcon } from "../../public/assets/icons/PhoneWhiteIcon";
 import Link from "next/link";
 import MenuIcon from "../../public/assets/icons/MenuIcon";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CloseIcon from "../../public/assets/icons/CloseIcon";
 import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
@@ -22,13 +22,30 @@ const navLinks = [
 export default function Navbar() {
   const t = useTranslations("Navbar");
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
 
   // Extract the current locale from the path (e.g., /en, /id)
   const currentLocale = pathname.split("/")[1] || "en"; // Default to "en"
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 30); // Change state if scroll > 50px
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="absolute pt-4 md:pt-8 lg:pt-0 lg:top-14 left-0 w-full z-30 bg-transparent">
+    // <header className="absolute pt-4 md:pt-8 lg:pt-0 lg:top-14 left-0 w-full z-30 bg-transparent">
+    <header
+      className={`fixed pt-4 md:pt-6 lg:pt-0 lg:top-14 left-0 w-full z-30 transition-colors duration-300 ${
+        isScrolled
+          ? "fixed py-4 top-0 md:py-6 lg:pt-6 lg:top-0 bg-background-whitebg/25 backdrop-blur shadow-md"
+          : "bg-transparent"
+      }`}
+    >
       <div className="container mx-auto lg:px-16">
         <div className="grid grid-cols-2 lg:grid-cols-3 items-center">
           <Link href={`/${currentLocale}`}>
