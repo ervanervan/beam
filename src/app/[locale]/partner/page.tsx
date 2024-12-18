@@ -1,12 +1,12 @@
 import { AccessibilityIcon } from "../../../../public/assets/icons/AccessibilityIcon";
 import { ArrowRightLongIcon } from "../../../../public/assets/icons/ArrowRightLongIcon";
+import { useTranslations } from "next-intl";
 import Button from "@/components/Button";
 import Benefits from "@/sections/Benefits";
 import Feature from "@/sections/Feature";
 import Help from "@/sections/Help";
 import Hero from "@/sections/Hero";
 import Testimonial from "@/sections/Testimonial";
-import { useTranslations } from "next-intl";
 import Link from "next/link";
 import React from "react";
 
