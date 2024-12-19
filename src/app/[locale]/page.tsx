@@ -1,3 +1,4 @@
+"use client";
 import { AccessibilityIcon } from "../../../public/assets/icons/AccessibilityIcon";
 import { ArrowRightLongIcon } from "../../../public/assets/icons/ArrowRightLongIcon";
 import { MapPinIcon } from "../../../public/assets/icons/MapPinIcon";
@@ -14,11 +15,15 @@ import Vehicle from "@/sections/Vehicle";
 import Videos from "@/sections/Videos";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Home() {
   const tHero = useTranslations("HomePage.Hero");
   const tFeature = useTranslations("HomePage.Feature");
   const tHelp = useTranslations("HomePage.Help");
+  const pathname = usePathname();
+
+  const currentLocale = pathname.split("/")[1] || "id";
   return (
     <>
       <Hero
@@ -31,7 +36,7 @@ export default function Home() {
             <Button variant="secondary" icon={<MapPinIcon />}>
               {tHero("buttons.viewGarage")}
             </Button>
-            <Link href={"/download"}>
+            <Link href={`/${currentLocale}/download`}>
               <Button
                 variant="primary"
                 icon={<ArrowRightLongIcon />}

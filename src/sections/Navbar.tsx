@@ -26,7 +26,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   // Extract the current locale from the path (e.g., /en, /id)
-  const currentLocale = pathname.split("/")[1] || "en"; // Default to "en"
+  const currentLocale = pathname.split("/")[1] || "id"; // Default to "en"
 
   useEffect(() => {
     const handleScroll = () => {
