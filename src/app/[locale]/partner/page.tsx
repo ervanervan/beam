@@ -1,3 +1,4 @@
+"use client";
 import { AccessibilityIcon } from "../../../../public/assets/icons/AccessibilityIcon";
 import { ArrowRightLongIcon } from "../../../../public/assets/icons/ArrowRightLongIcon";
 import { useTranslations } from "next-intl";
@@ -9,9 +10,13 @@ import Hero from "@/sections/Hero";
 import Testimonial from "@/sections/Testimonial";
 import Link from "next/link";
 import React from "react";
+import { usePathname } from "next/navigation";
 
 export default function Partner() {
   const t = useTranslations("PartnerPage");
+  const pathname = usePathname();
+
+  const currentLocale = pathname.split("/")[1] || "id";
   return (
     <>
       <Hero
@@ -20,7 +25,7 @@ export default function Partner() {
         backgroundClass="bg-hero-partner-pattern"
       >
         <div className="flex flex-col md:flex-row gap-3 mt-11">
-          <Link href={"/download"}>
+          <Link href={`/${currentLocale}/download`}>
             <Button
               variant="primary"
               icon={<ArrowRightLongIcon />}
