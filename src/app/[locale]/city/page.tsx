@@ -8,11 +8,16 @@ import Hero from "@/sections/Hero";
 import VehicleSafety from "@/sections/VehicleSafety";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 export default function City() {
   const tHero = useTranslations("CityPage.Hero");
   const tHelp = useTranslations("CityPage.Help");
+  const pathname = usePathname();
+
+  const currentLocale = pathname.split("/")[1] || "id";
+
   return (
     <>
       <Hero
@@ -21,7 +26,7 @@ export default function City() {
         backgroundClass="bg-hero-city-pattern"
       >
         <div className="flex flex-col md:flex-row gap-3 mt-11">
-          <Link href={"/download"}>
+          <Link href={`/${currentLocale}/download`}>
             <Button
               variant="primary"
               icon={<ArrowRightLongIcon />}
