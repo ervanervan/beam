@@ -320,5 +320,17 @@
         "position": "PDG du restaurant DEF"
       }
     ]
+  },
+
+  "QrCode": {
+    "title": "Vous pouvez également télécharger l'application Beam via le QR Code ci-dessous.",
+    "android": {
+      "title": "Android",
+      "description": "Profitez d'un voyage fluide avec Beam. Trouvez, déverrouillez et conduisez des trottinettes dans votre ville avec notre application Android."
+    },
+    "ios": {
+      "title": "iOS",
+      "description": "Profitez d'un voyage fluide avec Beam. Trouvez, déverrouillez et conduisez des trottinettes dans votre ville avec notre application iOS."
+    }
   }
 }

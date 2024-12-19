@@ -320,5 +320,17 @@
         "position": "CEO Restoran DEF"
       }
     ]
+  },
+
+  "QrCode": {
+    "title": "Atau bisa juga mengunduh aplikasi Beam via QR Code dibawah ini.",
+    "android": {
+      "title": "Android",
+      "description": "Nikmati perjalanan tanpa hambatan bersama Beam. Temukan, buka kunci, dan kendarai skuter di kotamu dengan aplikasi Android kami."
+    },
+    "ios": {
+      "title": "iOS",
+      "description": "Nikmati perjalanan tanpa hambatan bersama Beam. Temukan, buka kunci, dan kendarai skuter di kotamu dengan aplikasi iOS kami."
+    }
   }
 }

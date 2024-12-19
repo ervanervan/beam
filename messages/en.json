@@ -320,5 +320,17 @@
         "position": "CEO of DEF Restaurant"
       }
     ]
+  },
+
+  "QrCode": {
+    "title": "You can also download the Beam app via the QR Code below.",
+    "android": {
+      "title": "Android",
+      "description": "Enjoy seamless travel with Beam. Find, unlock, and ride scooters in your city with our Android app."
+    },
+    "ios": {
+      "title": "iOS",
+      "description": "Enjoy seamless travel with Beam. Find, unlock, and ride scooters in your city with our iOS app."
+    }
   }
 }
