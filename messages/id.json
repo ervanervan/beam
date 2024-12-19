@@ -283,6 +283,13 @@
     }
   },
 
+  "DownloadPage": {
+    "title": "Mulai dengan Beam",
+    "description": "Temukan, buka kunci, dan kendarai Beam di kota terdekat. Berangkat dalam hitungan menit, mudah dan cepat. Tersedia di iOS dan Android.",
+    "iosButton": "Unduh untuk iOS",
+    "androidButton": "Unduh untuk Android"
+  },
+
   "Benefit": {
     "tag": "Benefit",
     "title": "Benefit kami",

@@ -262,6 +262,13 @@
     }
   },
 
+  "DownloadPage": {
+    "title": "Get Started with Beam",
+    "description": "Find, unlock, and ride Beam in a nearby city. Depart within minutes, easy and quick. Available on iOS and Android.",
+    "iosButton": "Download for iOS",
+    "androidButton": "Download for Android"
+  },
+
   "PartnerPage": {
     "hero": {
       "title": "Partner",

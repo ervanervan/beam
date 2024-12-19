@@ -2,20 +2,22 @@ import { AccessibilityIcon } from "../../../../public/assets/icons/Accessibility
 import Button from "@/components/Button";
 import Hero from "@/sections/Hero";
 import QrCode from "@/sections/QrCode";
+import { useTranslations } from "next-intl";
 import React from "react";
 
 export default function Download() {
+  const t = useTranslations("DownloadPage");
   return (
     <>
       <Hero
-        title="Mulai dengan Beam"
-        description="Temukan, buka kunci, dan kendarai Beam di kota terdekat. Berangkat dalam hitungan menit, mudah dan cepat. Tersedia di iOS dan Android."
+        title={t("title")}
+        description={t("description")}
         backgroundClass="bg-hero-download-pattern"
       >
         <>
           <div className="flex flex-col md:flex-row gap-3 mt-11">
-            <Button variant="primary">Unduh untuk iOS</Button>
-            <Button variant="primary">Unduh untuk Android</Button>
+            <Button variant="primary">{t("iosButton")}</Button>
+            <Button variant="primary">{t("androidButton")}</Button>
           </div>
           <Button
             variant="secondary"

@@ -262,6 +262,13 @@
     }
   },
 
+  "DownloadPage": {
+    "title": "Commencez avec Beam",
+    "description": "Trouvez, déverrouillez et conduisez Beam dans une ville proche. Partez en quelques minutes, simple et rapide. Disponible sur iOS et Android.",
+    "iosButton": "Télécharger pour iOS",
+    "androidButton": "Télécharger pour Android"
+  },
+
   "PartnerPage": {
     "hero": {
       "title": "Partenaire",
