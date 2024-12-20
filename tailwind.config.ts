@@ -30,12 +30,12 @@ export default {
 
       backgroundImage: {
         "hero-pattern": "url('/assets/images/hero-image.webp')",
-        "help-pattern": "url('/assets/images/help-image.png')",
+        "help-pattern": "url('/assets/images/help-image.webp')",
         "city-pattern": "url('/assets/images/city-image.png')",
         "partner-pattern": "url('/assets/images/partner-image.png')",
         "hero-download-pattern":
           "url('/assets/images/hero-download-image.png')",
-        "hero-city-pattern": "url('/assets/images/hero-city-image.png')",
+        "hero-city-pattern": "url('/assets/images/hero-city-image.webp')",
         "hero-partner-pattern": "url('/assets/images/hero-partner-image.png')",
         gradientPrimary: "linear-gradient(to right, #E8E1FF, #FFEADB)",
         gradientPrimaryHover: "linear-gradient(to right, #E5E5E5, #E5E5E5)",
