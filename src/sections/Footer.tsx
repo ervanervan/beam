@@ -1,6 +1,6 @@
 import DashedBorderContainer from "@/components/DashedBorderContainer";
 import Image from "next/image";
-import vectorFooterImage from "../../public/assets/images/vector-footer.png";
+import vectorFooterImage from "../../public/assets/images/vector-footer.webp";
 import logoPrimary from "../../public/assets/images/logo-primary.svg";
 import instagramIcon from "../../public/assets/images/instagram-icon.svg";
 import facebookIcon from "../../public/assets/images/facebook-icon.svg";
