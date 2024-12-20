@@ -29,7 +29,7 @@ export default {
       // },
 
       backgroundImage: {
-        "hero-pattern": "url('/assets/images/hero-image.png')",
+        "hero-pattern": "url('/assets/images/hero-image.webp')",
         "help-pattern": "url('/assets/images/help-image.png')",
         "city-pattern": "url('/assets/images/city-image.png')",
         "partner-pattern": "url('/assets/images/partner-image.png')",

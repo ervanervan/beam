@@ -40,10 +40,10 @@ export default function Navbar() {
   return (
     // <header className="absolute pt-4 md:pt-8 lg:pt-0 lg:top-14 left-0 w-full z-30 bg-transparent">
     <header
-      className={`fixed pt-4 md:pt-6 lg:pt-0 lg:mt-14 left-0 w-full z-30 transition-colors duration-300 ${
+      className={`fixed left-0 w-full z-30 transition-colors duration-300 ${
         isScrolled
-          ? "fixed py-4 top-0 md:py-6 lg:pt-6 lg:mt-0 bg-background-whitebg/25 backdrop-blur shadow-md"
-          : "bg-transparent"
+          ? "py-4 top-0 md:py-6 lg:top-0 bg-background-whitebg/25 backdrop-blur shadow-md"
+          : "bg-transparent pt-4 md:pt-6 lg:pt-0 lg:mt-14"
       }`}
     >
       <div className="container mx-auto lg:px-16">
