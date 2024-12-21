@@ -1,3 +1,5 @@
+![Thumbnail image beam](./public/images/thumbnail.webp)
+
 # Beam Redesign Website
 
 This project is a redesign of the original Beam website, aimed at creating a more user-friendly, fresh, and engaging experience. The redesign focuses on enhancing:
