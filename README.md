@@ -1,4 +1,4 @@
-![Thumbnail image beam](./public/assets/images/thumbnail.webp)
+![Thumbnail design image beam](./public/assets/images/thumbnail.webp)
 
 # Beam Redesign Website
 
